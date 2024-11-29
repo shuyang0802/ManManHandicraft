@@ -146,6 +146,7 @@
     "color_schemes": {
       "scheme-1": {
         "settings": {
+          "header_background": "#ffffff",
           "background": "#efecec",
           "background_gradient": "",
           "text": "#252525",
@@ -164,7 +165,7 @@
         "scheme-1": {
           "settings": {
             "background": "#EFECEC",
-            "header_background": "",
+            "header_background": "#ffffff",
             "background_gradient": "",
             "text": "#252525",
             "button": "#2C332F",

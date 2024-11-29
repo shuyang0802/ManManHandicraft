@@ -123,7 +123,11 @@
     }
   }
 {%- endstyle -%}
-
+<style>
+  .color-scheme-1 {
+    --header-background: {{ settings.color_schemes.color_scheme_1.header_background }};
+  }
+</style>
 <script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>
 
 {%- liquid
