@@ -12,10 +12,10 @@
     "carousel_RwN79j": {
       "type": "carousel",
       "blocks": {
-        "carousel_item_MJRpTw": {
+        "carousel_item_D8VDgf": {
           "type": "carousel_item",
           "settings": {
-            "image": "shopify://shop_images/Cover3.jpg",
+            "image": "shopify://shop_images/Cover.jpg",
             "alt_text": "",
             "desktop_height": "100vh",
             "tablet_height": "400px",
@@ -24,10 +24,10 @@
             "object_position": "center"
           }
         },
-        "carousel_item_D8VDgf": {
+        "carousel_item_MJRpTw": {
           "type": "carousel_item",
           "settings": {
-            "image": "shopify://shop_images/Cover.jpg",
+            "image": "shopify://shop_images/Cover3.jpg",
             "alt_text": "",
             "desktop_height": "100vh",
             "tablet_height": "400px",
@@ -50,8 +50,8 @@
         }
       },
       "block_order": [
-        "carousel_item_MJRpTw",
         "carousel_item_D8VDgf",
+        "carousel_item_MJRpTw",
         "carousel_item_DiQBmA"
       ],
       "settings": {}
