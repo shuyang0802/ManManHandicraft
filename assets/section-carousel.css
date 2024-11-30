@@ -1,0 +1,8 @@
+.carousel-item {
+  overflow: hidden; /* Ensures images fit within the defined height */
+}
+
+.carousel-item img {
+  object-fit: cover; /* Ensures images scale without distortion */
+  width: 100%;
+}
