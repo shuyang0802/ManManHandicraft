@@ -24,17 +24,6 @@
             "object_position": "center"
           }
         },
-        "carousel_item_fDHPzU": {
-          "type": "carousel_item",
-          "settings": {
-            "alt_text": "",
-            "desktop_height": "100vh",
-            "tablet_height": "400px",
-            "mobile_height": "300px",
-            "object_fit": "cover",
-            "object_position": "center"
-          }
-        },
         "carousel_item_w8yPQi": {
           "type": "carousel_item",
           "settings": {
@@ -50,7 +39,6 @@
       },
       "block_order": [
         "carousel_item_D8VDgf",
-        "carousel_item_fDHPzU",
         "carousel_item_w8yPQi"
       ],
       "settings": {}
