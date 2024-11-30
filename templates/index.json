@@ -16,16 +16,14 @@
           "type": "carousel_item",
           "settings": {
             "image": "shopify://shop_images/Cover.jpg",
-            "alt_text": "",
-            "image_height": "80vh"
+            "alt_text": ""
           }
         },
         "carousel_item_w8yPQi": {
           "type": "carousel_item",
           "settings": {
             "image": "shopify://shop_images/Image_20241016230237.jpg",
-            "alt_text": "",
-            "image_height": "80vh"
+            "alt_text": ""
           }
         }
       },

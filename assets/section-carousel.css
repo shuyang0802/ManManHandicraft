@@ -1,8 +1,16 @@
-.carousel-item {
-  overflow: hidden; /* Ensures images fit within the defined height */
+.carousel-item img {
+  width: 100%;
+  height: 100%;
 }
 
-.carousel-item img {
-  object-fit: cover; /* Ensures images scale without distortion */
-  width: 100%;
+@media (max-width: 768px) {
+  .carousel-item img {
+    object-position: center top; /* Adjust position for mobile */
+  }
+}
+
+@media (max-width: 1024px) {
+  .carousel-item img {
+    object-position: center center; /* Adjust position for tablet */
+  }
 }

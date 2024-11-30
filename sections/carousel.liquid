@@ -1,5 +1,4 @@
-{{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
-
+{{ 'section-carousel.css' | asset_url | stylesheet_tag }}
   <div
   id="demo"
   class="carousel slide"
@@ -18,12 +17,21 @@
   <!-- The slideshow/carousel -->
   <div class="carousel-inner">
     {% for block in section.blocks %}
-      <div class="carousel-item {% if forloop.first %}active{% endif %}" style="height: {{ block.settings.image_height | default: '500px' }};">
+      <div
+        class="carousel-item {% if forloop.first %}active{% endif %}"
+        style="
+          height: {{ block.settings.desktop_height | default: '500px' }};
+        "
+        data-mobile-height="{{ block.settings.mobile_height | default: '300px' }}"
+        data-tablet-height="{{ block.settings.tablet_height | default: '400px' }}">
         <img
           src="{{ block.settings.image | img_url: 'master' }}"
           alt="{{ block.settings.alt_text }}"
           class="d-block w-100"
-          style="height: 100%; object-fit: cover;">
+          style="
+            object-fit: {{ block.settings.object_fit | default: 'cover' }};
+            object-position: {{ block.settings.object_position | default: 'center' }};
+          ">
       </div>
     {% endfor %}
   </div>
@@ -47,7 +55,7 @@
 
 {% schema %}
   {
-    "name": "Dynamic Carousel",
+    "name": "Responsive Carousel",
     "settings": [],
     "blocks": [
       {
@@ -58,22 +66,54 @@
             "type": "image_picker",
             "id": "image",
             "label": "Image"
-          }, {
+          },
+          {
             "type": "text",
             "id": "alt_text",
             "label": "Alt Text"
+          },
+          {
+            "type": "text",
+            "id": "desktop_height",
+            "label": "Desktop Height (e.g., 500px, 70vh)",
+            "default": "500px"
+          },
+          {
+            "type": "text",
+            "id": "tablet_height",
+            "label": "Tablet Height (e.g., 400px, 60vh)",
+            "default": "400px"
           }, {
             "type": "text",
-            "id": "image_height",
-            "label": "Image Height (e.g., 500px, 70vh)",
-            "default": "500px"
+            "id": "mobile_height",
+            "label": "Mobile Height (e.g., 300px, 50vh)",
+            "default": "300px"
+          }, {
+            "type": "select",
+            "id": "object_fit",
+            "label": "Image Fit (cover, contain)",
+            "options": [
+              {
+                "value": "cover",
+                "label": "Cover"
+              }, {
+                "value": "contain",
+                "label": "Contain"
+              }
+            ],
+            "default": "cover"
+          }, {
+            "type": "text",
+            "id": "object_position",
+            "label": "Image Position (e.g., center, top, bottom)",
+            "default": "center"
           }
         ]
       }
     ],
     "presets": [
       {
-        "name": "Dynamic Carousel",
+        "name": "Responsive Carousel",
         "category": "Custom"
       }
     ]
