@@ -16,20 +16,17 @@
           "type": "carousel_item",
           "settings": {
             "image": "shopify://shop_images/Cover.jpg",
-            "alt_text": ""
-          }
-        },
-        "carousel_item_w8yPQi": {
-          "type": "carousel_item",
-          "settings": {
-            "image": "shopify://shop_images/Image_20241016230237.jpg",
-            "alt_text": ""
+            "alt_text": "",
+            "desktop_height": "100vh",
+            "tablet_height": "400px",
+            "mobile_height": "30vh",
+            "object_fit": "cover",
+            "object_position": "center"
           }
         }
       },
       "block_order": [
-        "carousel_item_D8VDgf",
-        "carousel_item_w8yPQi"
+        "carousel_item_D8VDgf"
       ],
       "settings": {}
     }
