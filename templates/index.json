@@ -100,7 +100,7 @@
       "type": "product-grid",
       "settings": {
         "animation": "",
-        "paddingsection": "0px 0px 0px 0px",
+        "paddingsection": "50px 0px 50px 0px",
         "marginsection": "0px 0px 0px 0px",
         "bgsection": "#ffffff",
         "setwidth": "container",
