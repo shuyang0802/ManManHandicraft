@@ -18,11 +18,12 @@
   <!-- The slideshow/carousel -->
   <div class="carousel-inner">
     {% for block in section.blocks %}
-      <div class="carousel-item {% if forloop.first %}active{% endif %}">
+      <div class="carousel-item {% if forloop.first %}active{% endif %}" style="height: {{ block.settings.image_height | default: '500px' }};">
         <img
           src="{{ block.settings.image | img_url: 'master' }}"
           alt="{{ block.settings.alt_text }}"
-          class="d-block w-100">
+          class="d-block w-100"
+          style="height: 100%; object-fit: cover;">
       </div>
     {% endfor %}
   </div>
@@ -61,6 +62,11 @@
             "type": "text",
             "id": "alt_text",
             "label": "Alt Text"
+          }, {
+            "type": "text",
+            "id": "image_height",
+            "label": "Image Height (e.g., 500px, 70vh)",
+            "default": "500px"
           }
         ]
       }
