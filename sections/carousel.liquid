@@ -19,19 +19,18 @@
     {% for block in section.blocks %}
       <div
         class="carousel-item {% if forloop.first %}active{% endif %}"
-        style="
-          height: {{ block.settings.desktop_height | default: '500px' }};
-        "
+        style="height: {{ block.settings.desktop_height | default: '500px' }};"
         data-mobile-height="{{ block.settings.mobile_height | default: '300px' }}"
-        data-tablet-height="{{ block.settings.tablet_height | default: '400px' }}">
+        data-tablet-height="{{ block.settings.tablet_height | default: '400px' }}"
+        data-desktop-height="{{ block.settings.desktop_height | default: '500px' }}">
         <img
           src="{{ block.settings.image | img_url: 'master' }}"
           alt="{{ block.settings.alt_text }}"
           class="d-block w-100"
           style="
-            object-fit: {{ block.settings.object_fit | default: 'cover' }};
-            object-position: {{ block.settings.object_position | default: 'center' }};
-          ">
+      object-fit: {{ block.settings.object_fit | default: 'cover' }};
+      object-position: {{ block.settings.object_position | default: 'center' }};
+    ">
       </div>
     {% endfor %}
   </div>
