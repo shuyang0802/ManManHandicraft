@@ -19,10 +19,9 @@
     {% for block in section.blocks %}
       <div
         class="carousel-item {% if forloop.first %}active{% endif %}"
-        style="height: {{ block.settings.desktop_height | default: '500px' }};"
-        data-mobile-height="{{ block.settings.mobile_height | default: '300px' }}"
+        data-desktop-height="{{ block.settings.desktop_height | default: '500px' }}"
         data-tablet-height="{{ block.settings.tablet_height | default: '400px' }}"
-        data-desktop-height="{{ block.settings.desktop_height | default: '500px' }}">
+        data-mobile-height="{{ block.settings.mobile_height | default: '300px' }}">
         <img
           src="{{ block.settings.image | img_url: 'master' }}"
           alt="{{ block.settings.alt_text }}"
