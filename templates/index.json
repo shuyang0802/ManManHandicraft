@@ -1,1 +1,66 @@
-{"sections":{"rich_text":{"type":"rich-text","blocks":{"heading":{"type":"heading","settings":{"heading":"Start a journey of art","heading_size":"h0"}}},"block_order":["heading"],"settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"scheme-1","full_width":true,"padding_top":28,"padding_bottom":12}},"collage-0":{"type":"collage","blocks":{"collection-0":{"type":"collection","settings":{"collection":"crochet-coin-purse"}},"collection_9ePxex":{"type":"collection","settings":{"collection":"crochet-home-decor-series"}},"collection-1":{"type":"collection","settings":{"collection":"featured-flowers"}}},"block_order":["collection-0","collection_9ePxex","collection-1"],"settings":{"heading":"","heading_size":"h2","desktop_layout":"right","mobile_layout":"collage","card_styles":"product-card-wrapper","color_scheme":"scheme-1","padding_top":36,"padding_bottom":0}}},"order":["rich_text","collage-0"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "carousel_RwN79j": {
+      "type": "carousel",
+      "blocks": {
+        "carousel_item_D8VDgf": {
+          "type": "carousel_item",
+          "settings": {
+            "image": "shopify://shop_images/Cover.jpg",
+            "alt_text": "",
+            "image_height": "80vh"
+          }
+        },
+        "carousel_item_w8yPQi": {
+          "type": "carousel_item",
+          "settings": {
+            "image": "shopify://shop_images/Image_20241016230237.jpg",
+            "alt_text": "",
+            "image_height": "80vh"
+          }
+        }
+      },
+      "block_order": [
+        "carousel_item_D8VDgf",
+        "carousel_item_w8yPQi"
+      ],
+      "settings": {}
+    },
+    "rich_text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Start a journey of art",
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "heading"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-1",
+        "full_width": true,
+        "padding_top": 28,
+        "padding_bottom": 12
+      }
+    }
+  },
+  "order": [
+    "carousel_RwN79j",
+    "rich_text"
+  ]
+}
