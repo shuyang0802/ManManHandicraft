@@ -1,0 +1,83 @@
+{{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
+
+<section class="carousel-section">
+  <div class="carousel">
+    {% for block in section.blocks %}
+      <div class="carousel-item">
+        <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.alt_text }}">
+        <div class="carousel-content">
+          <h3>{{ block.settings.title }}</h3>
+          <p>{{ block.settings.text }}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<style>
+  .carousel {
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  .carousel-item {
+    flex: 0 0 auto;
+    width: 100%;
+    scroll-snap-align: start;
+    position: relative;
+  }
+
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .carousel-content {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Dynamic Carousel",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "carousel_item",
+        "name": "Carousel Item",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }, {
+            "type": "text",
+            "id": "alt_text",
+            "label": "Alt Text"
+          }, {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          }, {
+            "type": "textarea",
+            "id": "text",
+            "label": "Text"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Carousel",
+        "category": "Custom"
+      }
+    ]
+  }
+{% endschema %}
