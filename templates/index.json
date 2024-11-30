@@ -95,7 +95,25 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "product_grid_9qLqcb": {
+      "type": "product-grid",
+      "settings": {
+        "animation": "",
+        "paddingsection": "0px 0px 0px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "bgsection": "#ffffff",
+        "setwidth": "container",
+        "title": "Product list",
+        "des": "",
+        "collection": "crochet-coin-purse",
+        "rows": 2
+      }
     }
   },
-  "order": ["carousel_RwN79j", "collection_card_XdCwbz"]
+  "order": [
+    "carousel_RwN79j",
+    "collection_card_XdCwbz",
+    "product_grid_9qLqcb"
+  ]
 }
