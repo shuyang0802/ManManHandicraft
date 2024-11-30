@@ -8,6 +8,22 @@
     "theme_support_url": "https://support.shopify.com/"
   },
   {
+    "name": "Select layout",
+    "settings": [
+      {
+        "type": "select",
+        "id": "sectionheading",
+        "label": "Section heading",
+        "default": "heading-1",
+        "options": [
+          { "value": "heading-0", "label": "Default" },
+          { "value": "heading-1", "label": "Layout 1" },
+          { "value": "heading-2", "label": "Layout 2" }
+        ]
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.logo.name",
     "settings": [
       {
@@ -30,6 +46,140 @@
         "id": "favicon",
         "label": "t:settings_schema.logo.settings.favicon.label",
         "info": "t:settings_schema.logo.settings.favicon.info"
+      }
+    ]
+  },
+  {
+    "name": "Colors",
+    "settings": [
+      { "type": "header", "content": "Theme color" },
+      {
+        "type": "color",
+        "id": "color_primary",
+        "label": "Primary color",
+        "default": "#ad2c34"
+      },
+      {
+        "type": "color",
+        "id": "color_secondary",
+        "label": "Secondary color",
+        "default": "#348a5c"
+      },
+      {
+        "type": "color",
+        "id": "color_body_bg",
+        "label": "Page background",
+        "default": "#fff"
+      },
+      {
+        "type": "color",
+        "id": "color_content_bg",
+        "label": "Content background",
+        "default": "#fff"
+      },
+      {
+        "type": "color",
+        "id": "color_body_headings",
+        "label": "Heading text",
+        "default": "#1a1a1a"
+      },
+      {
+        "type": "color",
+        "id": "color_body_text",
+        "label": "Body text",
+        "default": "#666"
+      },
+      { "type": "header", "content": "Button" },
+      {
+        "type": "color",
+        "id": "color_cta",
+        "label": "CTA Button color",
+        "default": "#348a5c"
+      },
+      {
+        "type": "color",
+        "id": "color_cta_hover",
+        "label": "CTA Button hover color",
+        "default": "#fff"
+      },
+      {
+        "type": "color",
+        "id": "color_cta_bg",
+        "label": "CTA Button background color",
+        "default": "#fff"
+      },
+      {
+        "type": "color",
+        "id": "color_cta_bg_hover",
+        "label": "CTA Button hover background color",
+        "default": "#000"
+      },
+      { "type": "header", "content": "Button 2" },
+      {
+        "type": "color",
+        "id": "color_button_text",
+        "label": "CTA Button color",
+        "default": "#fff"
+      },
+      {
+        "type": "color",
+        "id": "color_button_text_hover",
+        "label": "CTA Button hover color",
+        "default": "#000"
+      },
+      {
+        "type": "color",
+        "id": "color_button_bg",
+        "label": "CTA Button background color",
+        "default": "#006eff"
+      },
+      {
+        "type": "color",
+        "id": "color_button_bg_hover",
+        "label": "CTA Button hover background color",
+        "default": "#fff"
+      },
+      { "type": "header", "content": "Popup Add Cart" },
+      {
+        "type": "color",
+        "id": "alert_text",
+        "label": "Text",
+        "default": "#fff"
+      },
+      {
+        "type": "color",
+        "id": "alert_bg",
+        "label": "Background",
+        "default": "#000"
+      },
+      {
+        "type": "color",
+        "id": "alert_bd",
+        "label": "Border",
+        "default": "#000"
+      },
+      { "type": "header", "content": "Gradient color" },
+      {
+        "type": "checkbox",
+        "id": "gradient_enable",
+        "label": "Enable",
+        "default": true
+      },
+      {
+        "type": "paragraph",
+        "content": "Gradient color of some buttons from left to right (or bottom to top)"
+      },
+      {
+        "type": "color",
+        "id": "gradient_start",
+        "label": "Start",
+        "default": "#FF5F6D"
+      },
+      {
+        "type": "color",
+        "id": "gradient_end",
+        "label": "End",
+        "default": "#FFC371"
       }
     ]
   },
@@ -113,6 +263,13 @@
       {
         "type": "header",
         "content": "t:settings_schema.typography.settings.header__1.content"
+      },
+      {
+        "type": "text",
+        "id": "font_family_google2",
+        "label": "Google font",
+        "info": "[Find more Google fonts](https://fonts.google.com)",
+        "default": "Staatliches"
       },
       {
         "type": "font_picker",

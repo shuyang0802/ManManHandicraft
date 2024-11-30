@@ -1,4 +1,41 @@
 <!-- featured-products.liquid -->
+<style>
+  .section-block {
+    position: relative;
+  }
+  @media only screen and (min-width: 750px) {
+    .section-title-1 {
+      font-size: 40px;
+    }
+  }
+  .section-title-1 {
+    font-size: 30px;
+    @include media-query($medium-up) {
+      font-size: 40px;
+    }
+    > span {
+      position: relative;
+      // &:after{
+      // content:"";
+      // display:block;
+      // position:absolute;
+      // height:3px;
+      // width:100%;
+      // left:0;
+      // bottom: -8px;
+      // background:var(--g-main);
+    }
+  }
+}
+.section-title-0 {
+  font-size: 34px;
+  font-weight: 500;
+}
+.font-family-2 {
+  font-family: var(--g-font-2);
+}
+</style>
+
 <div class="customstyle{{ section.id }}" data-aos={{section.settings.animation}}>
   {%- include 'style-section' -%}
   <div class="{{ section.settings.setwidth }}">

@@ -1,12 +1,73 @@
+<style>
+  .product-card {
+    position: relative;
+    display: block;
+    /*   background-color: $color-content; */
+    text-align: center;
+    padding: 0;
+    z-index: $z-index-product-card;
+    height: 100%;
+    .grid--no-gutters & {
+      border-left-width: 1px;
+    }
+    .js-product-video {
+      position: absolute !important;
+    }
+    .collection__card--first & {
+      border-left-width: 0;
+    }
+
+    // Overlay appears on hover/focus, don't change text color
+     &:hover,
+     &:focus {
+      color: $color-body-text;
+      outline: none;
+    }
+
+    // Prevent browser focus from being cut off
+     &:focus {
+      z-index: $z-index-product-card + 1;
+    }
+  }
+  .product-card__info {
+    padding: 20px 0 25px;
+    min-height: 121px;
+    margin-bottom: var(--g-gutter);
+  }
+  .product-card__name {
+    color: var(--g-color-heading);
+    font-weight: 500;
+    font-size: var(--g-font-size);
+     &:hover {
+      color: var(--g-main);
+    }
+  }
+  .product-card__price {
+    margin-top: 5px;
+    color: #222;
+    font-size: 16px;
+    font-weight: 600;
+    > .money {
+      font-weight: 600;
+      color: var(--g-main-2);
+    }
+  }
+</style>
+
 <a href="#" class="product-card">
   <div class="product-card__image">
     {%- capture current -%}{%- cycle 1, 2, 3, 4, 5, 6 -%}{%- endcapture -%}
     {{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
   </div>
   <div class="product-card__info">
-    <div class="product-card__name">{{ 'homepage.onboarding.product_title' | t }}</div>
+    <div class="product-card__name">{{ 'onboarding.product_title' | t }}</div>
     <div class="product-card__price">
-      {%- cycle '$19.99', '$28.37', '$33.22', '$41.56', '$55.21', '$62.98' -%}
+      {%- cycle '$19.99'
+        , '$28.37'
+        , '$33.22'
+        , '$41.56'
+        , '$55.21'
+        , '$62.98' -%}
     </div>
   </div>
 </a>
