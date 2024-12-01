@@ -126,12 +126,27 @@
         "collection": "crochet-flower-bouquet",
         "rows": 2
       }
+    },
+    "product_grid_JCjeYH": {
+      "type": "product-grid",
+      "settings": {
+        "animation": "",
+        "paddingsection": "50px 0px 50px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "bgsection": "#ffffff",
+        "setwidth": "container",
+        "title": "Crochet Home Decor Series",
+        "des": "",
+        "collection": "crochet-home-decor-series",
+        "rows": 1
+      }
     }
   },
   "order": [
     "carousel_RwN79j",
     "collection_card_XdCwbz",
     "product_grid_9qLqcb",
-    "product_grid_XtmTiP"
+    "product_grid_XtmTiP",
+    "product_grid_JCjeYH"
   ]
 }
