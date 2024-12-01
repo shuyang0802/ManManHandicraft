@@ -370,10 +370,12 @@
       if (this.predictiveSearch && this.predictiveSearch.isOpen) return;
       
 
+
       if (scrollTop > this.currentScrollTop && scrollTop > this.headerBounds.bottom) {
         this.header.classList.add('scrolled-past-header');
         if (this.preventHide) return;
         
+
         requestAnimationFrame(this.hide.bind(this));
       } else if (scrollTop < this.currentScrollTop && scrollTop > this.headerBounds.bottom) {
         this.header.classList.add('scrolled-past-header');
@@ -399,6 +401,7 @@
     hide() {
       if (this.headerIsAlwaysSticky) return;
       
+
       this.header.classList.add('shopify-section-header-hidden', 'shopify-section-header-sticky');
       this.closeMenuDisclosure();
       this.closeSearchModal();
@@ -407,6 +410,7 @@
     reveal() {
       if (this.headerIsAlwaysSticky) return;
       
+
       this.header.classList.add('shopify-section-header-sticky', 'animate');
       this.header.classList.remove('shopify-section-header-hidden');
     }
@@ -414,6 +418,7 @@
     reset() {
       if (this.headerIsAlwaysSticky) return;
       
+
       this.header.classList.remove('shopify-section-header-hidden', 'shopify-section-header-sticky', 'animate');
     }
 
