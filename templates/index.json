@@ -115,6 +115,9 @@
     },
     "product_grid_XtmTiP": {
       "type": "product-grid",
+      "custom_css": [
+        "h3{text-transform:uppercase}"
+      ],
       "settings": {
         "animation": "",
         "paddingsection": "0px 0px 0px 0px",
