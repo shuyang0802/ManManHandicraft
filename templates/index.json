@@ -129,11 +129,14 @@
     },
     "product_grid_JCjeYH": {
       "type": "product-grid",
+      "custom_css": [
+        "h3 {color: #FFF;}"
+      ],
       "settings": {
         "animation": "",
         "paddingsection": "50px 0px 50px 0px",
         "marginsection": "0px 0px 0px 0px",
-        "bgsection": "#ffffff",
+        "bgsection": "#eec9b6",
         "setwidth": "container",
         "title": "Crochet Home Decor Series",
         "des": "",
