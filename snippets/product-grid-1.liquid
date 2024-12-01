@@ -1,10 +1,9 @@
 <style>
-  .product-image {
+  .product-image img {
     width: 100%;
     max-height: 250px;
     object-fit: cover;
     border-radius: 25px 25px 0 0;
-    margin-bottom: 20px;
     position: relative;
     z-index: 1;
   }
@@ -12,7 +11,7 @@
     position: relative;
     overflow: hidden;
     border-radius: 25px;
-    height: 350px !important;
+    height: 100%;
   }
 
   .add-to-cart-button {
@@ -22,9 +21,7 @@
     width: 100%;
     height: 250px;
     background-color: rgba(255, 255, 255, 0);
-    /* 初始透明背景 */
     color: transparent;
-    /* 初始透明文字 */
     border: none;
     padding: 0;
     border-radius: 25px 25px 0 0;
@@ -38,44 +35,51 @@
     z-index: 2;
     /* 确保按钮在图像之上 */
   }
-  .card:hover .add-to-cart-button {
-    background-color: rgba(235, 109, 156, 0.5);
+  .product-image:hover .add-to-cart-button {
+    background-color: rgba(235, 109, 156, 0.5) !important;
     /* 悬停时的背景颜色 */
-    color: white;
+    color: white !important;
     /* 悬停时的文字颜色 */
   }
   .card-body {
-    position: relative;
-    padding: 0 !important;
+    padding: 0;
+    height: max-content;
+  }
+
+  .product-info {
+    margin: 20px 10px 0;
+  }
+  .product-info p {
+    margin: 0;
+    color: #666;
   }
   .product-title {
-    padding-left: 20px;
     color: #222;
   }
   .product-title:hover {
     color: #EB6D9C !important;
     text-decoration: none;
   }
-  .grid-product__price {
-    margin: 10px auto 0;
-    padding-left: 20px;
-  }
 </style>
 
 <div class="card mb-3 product-card">
-  <div class="card-body">
+  <div class="product-image">
     <a href="{{ product.url }}">
       <img
-        class="product-image"
+        class="card-img-top"
         src="{{ product.featured_image | img_url: 'large' }}"
         alt="{{ product.title }}">
     </a>
-    <a class="product-title" href="{{ product.url }}">{{ product.title }}</a>
-    <div class="grid-product__price">
-      {{ product.price | money }}
+    <button class="add-to-cart-button" onclick="addToCart('{{ product.variants.first.id }}')">Add To Cart</button>
+  </div>
+  <div class="card-body">
+    <div class="product-info">
+      <a class="product-title" href="{{ product.url }}">{{ product.title }}</a>
+      <p>
+        {{ product.price | money }}
+      </p>
     </div>
   </div>
-  <button class="add-to-cart-button" onclick="addToCart('{{ product.variants.first.id }}')">Add To Cart</button>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
