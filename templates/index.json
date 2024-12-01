@@ -99,7 +99,7 @@
     "product_grid_9qLqcb": {
       "type": "product-grid",
       "custom_css": [
-        "h3 {color: #fff;}"
+        "h3 {color: #fff; text-transform:uppercase}"
       ],
       "settings": {
         "animation": "",
@@ -116,7 +116,7 @@
     "product_grid_XtmTiP": {
       "type": "product-grid",
       "custom_css": [
-        "h3{text-transform:uppercase}"
+        "h3 {text-transform: uppercase;}"
       ],
       "settings": {
         "animation": "",
