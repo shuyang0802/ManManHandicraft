@@ -62,6 +62,7 @@
         "logo_EGBKp3": {
           "type": "Logo",
           "settings": {
+            "Logoimage": "shopify://shop_images/Cover.jpg",
             "logotitle": "Logo Slider"
           }
         },
@@ -111,9 +112,7 @@
         "logo_CTJDdh",
         "logo_DaDwYW"
       ],
-      "settings": {
-        "title": ""
-      }
+      "settings": {}
     },
     "collection_card_XdCwbz": {
       "type": "collection-card",
