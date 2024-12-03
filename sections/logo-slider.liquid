@@ -34,8 +34,8 @@
       <div class="slide">
         <p>Debug: {{ block.settings.Logoimage }}</p>
         <img
-          srcset="{{ block.settings.Logoimage }}"
-          src="{{ block.settings.Logoimage }}"
+          srcset="{{ block.settings.Logoimage | img_url: 'master' }}"
+          src="{{ block.settings.Logoimage | img_url: 'master' }} "
           height="100"
           width="250"
           alt="{{ block.settings.logotitle }}" />
