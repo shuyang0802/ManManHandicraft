@@ -62,13 +62,37 @@
         "logo_X4tzBF": {
           "type": "Logo",
           "settings": {
-            "image": "shopify://shop_images/Cover3.jpg",
-            "title": "Logo Slider"
+            "image": "shopify://shop_images/Cover3.jpg"
           }
+        },
+        "logo_TQFMRc": {
+          "type": "Logo",
+          "settings": {}
+        },
+        "logo_9LcRBn": {
+          "type": "Logo",
+          "settings": {}
+        },
+        "logo_H4Ukkg": {
+          "type": "Logo",
+          "settings": {}
+        },
+        "logo_pbTrKz": {
+          "type": "Logo",
+          "settings": {}
+        },
+        "logo_VYqzMk": {
+          "type": "Logo",
+          "settings": {}
         }
       },
       "block_order": [
-        "logo_X4tzBF"
+        "logo_X4tzBF",
+        "logo_TQFMRc",
+        "logo_9LcRBn",
+        "logo_H4Ukkg",
+        "logo_pbTrKz",
+        "logo_VYqzMk"
       ],
       "settings": {
         "title": "Logo Slider"
