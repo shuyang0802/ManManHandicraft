@@ -33,12 +33,11 @@
     {% for block in section.blocks %}
       <div class="slide">
         <img
-          src="{{ block.settings.image }}"
+          src="{{ block.settings.Logoimage }}"
           height="100"
           width="250"
           alt="{{ block.settings.logotitle }}" />
         <h3>{{ block.settings.logotitle }}</h3>
-        <h3>{{ block.settings.title }}</h3>
       </div>
     {% endfor %}
   </div>
@@ -47,14 +46,7 @@
 {% schema %}
   {
     "name": "Logo Slider",
-    "settings": [
-      {
-        "type": "text",
-        "id": "title",
-        "label": "Title",
-        "default": "Logo Slider"
-      }
-    ],
+    "settings": [],
     "blocks": [
       {
         "type": "Logo",
@@ -62,7 +54,7 @@
         "settings": [
           {
             "type": "image_picker",
-            "id": "image",
+            "id": "Logoimage",
             "label": "Image"
           }, {
             "type": "text",
