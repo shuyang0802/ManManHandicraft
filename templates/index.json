@@ -56,48 +56,6 @@
       ],
       "settings": {}
     },
-    "logo_slider_34nx63": {
-      "type": "logo-slider",
-      "blocks": {
-        "logo_X4tzBF": {
-          "type": "Logo",
-          "settings": {
-            "image": "shopify://shop_images/Cover3.jpg"
-          }
-        },
-        "logo_TQFMRc": {
-          "type": "Logo",
-          "settings": {}
-        },
-        "logo_9LcRBn": {
-          "type": "Logo",
-          "settings": {}
-        },
-        "logo_H4Ukkg": {
-          "type": "Logo",
-          "settings": {}
-        },
-        "logo_pbTrKz": {
-          "type": "Logo",
-          "settings": {}
-        },
-        "logo_VYqzMk": {
-          "type": "Logo",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "logo_X4tzBF",
-        "logo_TQFMRc",
-        "logo_9LcRBn",
-        "logo_H4Ukkg",
-        "logo_pbTrKz",
-        "logo_VYqzMk"
-      ],
-      "settings": {
-        "title": "Logo Slider"
-      }
-    },
     "collection_card_XdCwbz": {
       "type": "collection-card",
       "blocks": {
@@ -140,9 +98,7 @@
     },
     "product_grid_9qLqcb": {
       "type": "product-grid",
-      "custom_css": [
-        "h3 {color: #fff; text-transform: uppercase;}"
-      ],
+      "custom_css": ["h3 {color: #fff; text-transform: uppercase;}"],
       "settings": {
         "animation": "",
         "paddingsection": "50px 0px 50px 0px",
@@ -157,9 +113,7 @@
     },
     "product_grid_XtmTiP": {
       "type": "product-grid",
-      "custom_css": [
-        "h3 {text-transform: uppercase;}"
-      ],
+      "custom_css": ["h3 {text-transform: uppercase;}"],
       "settings": {
         "animation": "",
         "paddingsection": "0px 0px 0px 0px",
@@ -174,9 +128,7 @@
     },
     "product_grid_JCjeYH": {
       "type": "product-grid",
-      "custom_css": [
-        "h3 {color: #fff; text-transform: uppercase !important;}"
-      ],
+      "custom_css": ["h3 {color: #fff; text-transform: uppercase !important;}"],
       "settings": {
         "animation": "",
         "paddingsection": "50px 0px 50px 0px",
@@ -254,7 +206,6 @@
   },
   "order": [
     "carousel_RwN79j",
-    "logo_slider_34nx63",
     "collection_card_XdCwbz",
     "product_grid_9qLqcb",
     "product_grid_XtmTiP",
