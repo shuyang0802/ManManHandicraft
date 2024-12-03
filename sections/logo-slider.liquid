@@ -23,8 +23,8 @@
   }
 
   .slider .slide {
-    height: 100px;
-    width: 250px;
+    height: 300px;
+    width: 400px;
   }
 </style>
 
@@ -32,14 +32,11 @@
   <div class="slide-track">
     {% for block in section.blocks %}
       <div class="slide">
-        <p>Debug: {{ block.settings.Logoimage }}</p>
-        <img
-          srcset="{{ block.settings.Logoimage | img_url: 'master' }}"
-          src="{{ block.settings.Logoimage | img_url: 'master' }} "
-          height="100"
-          width="250"
-          alt="{{ block.settings.logotitle }}" />
-        <h3>{{ block.settings.logotitle }}</h3>
+        <div>
+          <i class="{{ block.settings.icon }}"></i>
+          <h3>{{ block.settings.logotitle }}</h3>
+          <p>{{ block.settings.logotext }}</p>
+        </div>
       </div>
     {% endfor %}
   </div>
@@ -54,16 +51,24 @@
         "type": "Logo",
         "name": "Slide",
         "settings": [
-          {
-            "type": "image_picker",
-            "id": "Logoimage",
-            "label": "Image"
-          }, {
+            {
+            "type": "text",
+            "id": "icon",
+            "label": "icon",
+            "default": "home"
+            },
+            {
             "type": "text",
             "id": "logotitle",
             "label": "logotitle",
             "default": "Logo Slider"
-          }
+            },
+            {
+            "type": "text",
+            "id": "logotext",
+            "label": "logotext",
+            "default": "Logo Slider"
+            },
         ]
       }
     ],
