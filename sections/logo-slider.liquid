@@ -30,98 +30,16 @@
 
 <div class="slider">
   <div class="slide-track">
-    <div class="slide">
-      <img
-        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png"
-        height="100"
-        width="250"
-        alt="" />
-      <h3>{{ block.settings.title }}</h3>
-    </div>
-    <div class="slide">
-      <img
-        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"
-        height="100"
-        width="250"
-        alt="" />
-    </div>
-    <div class="slide">
-      <img
-        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png"
-        height="100"
-        width="250"
-        alt="" />
-    </div>
-    <div class="slide">
-      <img
-        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png"
-        height="100"
-        width="250"
-        alt="" />
-    </div>
-    <div class="slide">
-      <img
-        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png"
-        height="100"
-        width="250"
-        alt="" />
-    </div>
-    <div class="slide">
-      <img
-        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png"
-        height="100"
-        width="250"
-        alt="" />
-    </div>
-    <div class="slide">
-      <img
-        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png"
-        height="100"
-        width="250"
-        alt="" />
-    </div>
-    <div class="slide">
-      <img
-        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png"
-        height="100"
-        width="250"
-        alt="" />
-    </div>
-    <div class="slide">
-      <img
-        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"
-        height="100"
-        width="250"
-        alt="" />
-    </div>
-    <div class="slide">
-      <img
-        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png"
-        height="100"
-        width="250"
-        alt="" />
-    </div>
-    <div class="slide">
-      <img
-        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png"
-        height="100"
-        width="250"
-        alt="" />
-    </div>
-    <div class="slide">
-      <img
-        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png"
-        height="100"
-        width="250"
-        alt="" />
-    </div>
-    <div class="slide">
-      <img
-        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png"
-        height="100"
-        width="250"
-        alt="" />
-    </div>
+    {% for block in section.blocks %}
+      <div class="slide">
+        <img
+          src="{{ block.settings.image }}"
+          height="100"
+          width="250"
+          alt="{{ block.settings.logotitle }}" />
+        <h3>{{ block.settings.logotitle }}</h3>
+      </div>
+    {% endfor %}
   </div>
 </div>
 
@@ -138,10 +56,14 @@
     ],
     "blocks": [
       {
-        "type": "text",
-        "name": "title",
+        "type": "Logo",
+        "name": "Slide",
         "settings": [
           {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }, {
             "type": "text",
             "id": "title",
             "label": "Title",
@@ -156,7 +78,7 @@
         "category": "Logos",
         "blocks": [
           {
-            "type": "text"
+            "type": "Logo"
           }
         ]
       }

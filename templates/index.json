@@ -56,23 +56,6 @@
       ],
       "settings": {}
     },
-    "logo_slider_34nx63": {
-      "type": "logo-slider",
-      "blocks": {
-        "text_3FfbLU": {
-          "type": "text",
-          "settings": {
-            "title": "hiuhiuhiu"
-          }
-        }
-      },
-      "block_order": [
-        "text_3FfbLU"
-      ],
-      "settings": {
-        "title": "Logo Slider"
-      }
-    },
     "collection_card_XdCwbz": {
       "type": "collection-card",
       "blocks": {
@@ -224,6 +207,23 @@
         "desktop_layout": "image_first",
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "logo_slider_34nx63": {
+      "type": "logo-slider",
+      "blocks": {
+        "text_3FfbLU": {
+          "type": "text",
+          "settings": {
+            "title": "Logo Slider"
+          }
+        }
+      },
+      "block_order": [
+        "text_3FfbLU"
+      ],
+      "settings": {
+        "title": "Logo Slider"
       }
     }
   },
