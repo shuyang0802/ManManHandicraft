@@ -4,12 +4,12 @@
       transform: translateX(0);
     }
     100% {
-      transform: translateX(calc(-250px * 7));
+      transform: translateX(calc(-400px * 7));
     }
   }
 
   .slider {
-    height: 100px;
+    height: 300px;
     margin: auto;
     overflow: hidden;
     position: relative;
@@ -19,12 +19,22 @@
   .slider .slide-track {
     animation: scroll 10s linear infinite;
     display: flex;
-    width: calc(250px * 14);
+    width: calc(400px * 14);
   }
 
   .slider .slide {
     height: 300px;
     width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .slider .slide i {
+    font-size: 2em;
+    margin-bottom: 10px;
   }
 </style>
 
@@ -33,7 +43,7 @@
     {% for block in section.blocks %}
       <div class="slide">
         <div>
-          <i class="{{ block.settings.icon }}"></i>
+          <i class="fas fa-{{ block.settings.icon }}"></i>
           <h3>{{ block.settings.logotitle }}</h3>
           <p>{{ block.settings.logotext }}</p>
         </div>
@@ -41,10 +51,6 @@
     {% endfor %}
   </div>
 </div>
-    <script
-      src="https://example.com/fontawesome/v6.6.0/js/all.js"
-      data-auto-a11y="true"
-    ></script>
 
 {% schema %}
   {
@@ -55,24 +61,22 @@
         "type": "Logo",
         "name": "Slide",
         "settings": [
-            {
+          {
             "type": "text",
             "id": "icon",
-            "label": "icon",
+            "label": "Icon",
             "default": "home"
-            },
-            {
+          }, {
             "type": "text",
             "id": "logotitle",
-            "label": "logotitle",
+            "label": "Logo Title",
             "default": "Logo Slider"
-            },
-            {
+          }, {
             "type": "text",
             "id": "logotext",
-            "label": "logotext",
+            "label": "Logo Text",
             "default": "Logo Slider"
-            },
+          }
         ]
       }
     ],
