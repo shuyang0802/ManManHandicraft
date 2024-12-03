@@ -78,17 +78,17 @@
         "logo_gDNMBg": {
           "type": "Logo",
           "settings": {
-            "icon": "home",
-            "logotitle": "Logo Slider",
-            "logotext": "Logo Slider"
+            "icon": "truck",
+            "logotitle": "Free Local Delivery",
+            "logotext": "$4.50 per delivery, free shipping above $80"
           }
         },
         "logo_DaDwYW": {
           "type": "Logo",
           "settings": {
-            "icon": "home",
-            "logotitle": "Logo Slider",
-            "logotext": "Logo Slider"
+            "icon": "question",
+            "logotitle": "Got a question?",
+            "logotext": "Tap the Whatsapp icon below. Our friendly team will get back to you :)"
           }
         }
       },
