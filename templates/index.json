@@ -99,7 +99,7 @@
         "logo_DaDwYW"
       ],
       "custom_css": [
-        "i h3 p{color: white;}"
+        "i, h3, p {color: white;}"
       ],
       "settings": {
         "slider_style": "#eec9b6"

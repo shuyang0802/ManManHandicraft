@@ -4,7 +4,8 @@
       transform: translateX(0);
     }
     100% {
-      transform: translateX(calc(-400px * 7));
+      transform: translateX(calc(-400px * 4));
+      /* 根据实际滑块数量调整 */
     }
   }
 
@@ -14,14 +15,14 @@
     overflow: hidden;
     position: relative;
     width: auto;
-  }
-  .slider {
     background-color: var(--slider-background-color);
   }
+
   .slider .slide-track {
     animation: scroll 30s linear infinite;
     display: flex;
-    width: calc(400px * 14);
+    width: calc(400px * 8);
+    /* 8 slides (4 original + 4 copies) */
     height: 200px;
   }
 
@@ -39,6 +40,7 @@
     font-size: 2em;
     margin-bottom: 10px;
   }
+
   .slide-content {
     justify-content: center;
     align-items: center;
@@ -49,6 +51,16 @@
 
 <div class="slider" style="--slider-background-color: {{ section.settings.slider_style }};">
   <div class="slide-track">
+    {% for block in section.blocks %}
+      <div class="slide">
+        <div class="slide-content">
+          <i class="fas fa-{{ block.settings.icon }}"></i>
+          <h3>{{ block.settings.logotitle }}</h3>
+          <p>{{ block.settings.logotext }}</p>
+        </div>
+      </div>
+    {% endfor %}
+    <!-- 复制滑块内容 -->
     {% for block in section.blocks %}
       <div class="slide">
         <div class="slide-content">
