@@ -56,6 +56,65 @@
       ],
       "settings": {}
     },
+    "logo_slider_zL6hq9": {
+      "type": "logo-slider",
+      "blocks": {
+        "logo_EGBKp3": {
+          "type": "Logo",
+          "settings": {
+            "logotitle": "Logo Slider"
+          }
+        },
+        "logo_KKrfYF": {
+          "type": "Logo",
+          "settings": {
+            "logotitle": "Logo Slider"
+          }
+        },
+        "logo_gDNMBg": {
+          "type": "Logo",
+          "settings": {
+            "logotitle": "Logo Slider"
+          }
+        },
+        "logo_Urr8Wt": {
+          "type": "Logo",
+          "settings": {
+            "logotitle": "Logo Slider"
+          }
+        },
+        "logo_3L3p3f": {
+          "type": "Logo",
+          "settings": {
+            "logotitle": "Logo Slider"
+          }
+        },
+        "logo_CTJDdh": {
+          "type": "Logo",
+          "settings": {
+            "logotitle": "Logo Slider"
+          }
+        },
+        "logo_DaDwYW": {
+          "type": "Logo",
+          "settings": {
+            "logotitle": "Logo Slider"
+          }
+        }
+      },
+      "block_order": [
+        "logo_EGBKp3",
+        "logo_KKrfYF",
+        "logo_gDNMBg",
+        "logo_Urr8Wt",
+        "logo_3L3p3f",
+        "logo_CTJDdh",
+        "logo_DaDwYW"
+      ],
+      "settings": {
+        "title": ""
+      }
+    },
     "collection_card_XdCwbz": {
       "type": "collection-card",
       "blocks": {
@@ -98,7 +157,9 @@
     },
     "product_grid_9qLqcb": {
       "type": "product-grid",
-      "custom_css": ["h3 {color: #fff; text-transform: uppercase;}"],
+      "custom_css": [
+        "h3 {color: #fff; text-transform: uppercase;}"
+      ],
       "settings": {
         "animation": "",
         "paddingsection": "50px 0px 50px 0px",
@@ -113,7 +174,9 @@
     },
     "product_grid_XtmTiP": {
       "type": "product-grid",
-      "custom_css": ["h3 {text-transform: uppercase;}"],
+      "custom_css": [
+        "h3 {text-transform: uppercase;}"
+      ],
       "settings": {
         "animation": "",
         "paddingsection": "0px 0px 0px 0px",
@@ -128,7 +191,9 @@
     },
     "product_grid_JCjeYH": {
       "type": "product-grid",
-      "custom_css": ["h3 {color: #fff; text-transform: uppercase !important;}"],
+      "custom_css": [
+        "h3 {color: #fff; text-transform: uppercase !important;}"
+      ],
       "settings": {
         "animation": "",
         "paddingsection": "50px 0px 50px 0px",
@@ -206,6 +271,7 @@
   },
   "order": [
     "carousel_RwN79j",
+    "logo_slider_zL6hq9",
     "collection_card_XdCwbz",
     "product_grid_9qLqcb",
     "product_grid_XtmTiP",
