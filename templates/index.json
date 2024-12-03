@@ -62,7 +62,6 @@
         "logo_EGBKp3": {
           "type": "Logo",
           "settings": {
-            "Logoimage": "shopify://shop_images/Cover.jpg",
             "logotitle": "Logo Slider"
           }
         },
