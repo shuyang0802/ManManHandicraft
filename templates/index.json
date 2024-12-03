@@ -62,7 +62,7 @@
         "logo_EGBKp3": {
           "type": "Logo",
           "settings": {
-            "icon": "fa-regular fa-clock",
+            "icon": "fa-solid fa-clock",
             "logotitle": "Logo Slider",
             "logotext": "Logo Slider"
           }
