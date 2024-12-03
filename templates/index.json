@@ -70,9 +70,9 @@
         "logo_KKrfYF": {
           "type": "Logo",
           "settings": {
-            "icon": "home",
-            "logotitle": "Logo Slider",
-            "logotext": "Logo Slider"
+            "icon": "calendar",
+            "logotitle": "Workshop Schedule",
+            "logotext": "3 hour"
           }
         },
         "logo_gDNMBg": {
