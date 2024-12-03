@@ -17,7 +17,7 @@
   }
 
   .slider .slide-track {
-    animation: scroll 10s linear infinite;
+    animation: scroll 30s linear infinite;
     display: flex;
     width: calc(400px * 14);
   }
@@ -36,13 +36,18 @@
     font-size: 2em;
     margin-bottom: 10px;
   }
+  .slide-content {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
 </style>
 
 <div class="slider">
   <div class="slide-track">
     {% for block in section.blocks %}
       <div class="slide">
-        <div>
+        <div class="slide-content">
           <i class="fas fa-{{ block.settings.icon }}"></i>
           <h3>{{ block.settings.logotitle }}</h3>
           <p>{{ block.settings.logotext }}</p>

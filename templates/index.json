@@ -62,41 +62,54 @@
         "logo_EGBKp3": {
           "type": "Logo",
           "settings": {
-            "icon": "home",
-            "logotitle": "Logo Slider",
-            "logotext": "Logo Slider"
+            "logotitle": "Logo Slider"
+          }
+        },
+        "logo_KKrfYF": {
+          "type": "Logo",
+          "settings": {
+            "logotitle": "Logo Slider"
+          }
+        },
+        "logo_gDNMBg": {
+          "type": "Logo",
+          "settings": {
+            "logotitle": "Logo Slider"
+          }
+        },
+        "logo_Urr8Wt": {
+          "type": "Logo",
+          "settings": {
+            "logotitle": "Logo Slider"
+          }
+        },
+        "logo_3L3p3f": {
+          "type": "Logo",
+          "settings": {
+            "logotitle": "Logo Slider"
           }
         },
         "logo_CTJDdh": {
           "type": "Logo",
           "settings": {
-            "icon": "home",
-            "logotitle": "Logo Slider",
-            "logotext": "Logo Slider"
+            "logotitle": "Logo Slider"
           }
         },
         "logo_DaDwYW": {
           "type": "Logo",
           "settings": {
-            "icon": "home",
-            "logotitle": "Logo Slider",
-            "logotext": "Logo Slider"
-          }
-        },
-        "logo_FtKYyq": {
-          "type": "Logo",
-          "settings": {
-            "icon": "home",
-            "logotitle": "Logo Slider",
-            "logotext": "Logo Slider"
+            "logotitle": "Logo Slider"
           }
         }
       },
       "block_order": [
         "logo_EGBKp3",
+        "logo_KKrfYF",
+        "logo_gDNMBg",
+        "logo_Urr8Wt",
+        "logo_3L3p3f",
         "logo_CTJDdh",
-        "logo_DaDwYW",
-        "logo_FtKYyq"
+        "logo_DaDwYW"
       ],
       "settings": {}
     },
