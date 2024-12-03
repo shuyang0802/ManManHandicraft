@@ -62,43 +62,33 @@
         "logo_EGBKp3": {
           "type": "Logo",
           "settings": {
-            "logotitle": "Logo Slider"
+            "icon": "clock",
+            "logotitle": "Opening Hours",
+            "logotext": "11:00-19:00"
           }
         },
         "logo_KKrfYF": {
           "type": "Logo",
           "settings": {
-            "logotitle": "Logo Slider"
+            "icon": "home",
+            "logotitle": "Logo Slider",
+            "logotext": "Logo Slider"
           }
         },
         "logo_gDNMBg": {
           "type": "Logo",
           "settings": {
-            "logotitle": "Logo Slider"
-          }
-        },
-        "logo_Urr8Wt": {
-          "type": "Logo",
-          "settings": {
-            "logotitle": "Logo Slider"
-          }
-        },
-        "logo_3L3p3f": {
-          "type": "Logo",
-          "settings": {
-            "logotitle": "Logo Slider"
-          }
-        },
-        "logo_CTJDdh": {
-          "type": "Logo",
-          "settings": {
-            "logotitle": "Logo Slider"
+            "icon": "home",
+            "logotitle": "Logo Slider",
+            "logotext": "Logo Slider"
           }
         },
         "logo_DaDwYW": {
           "type": "Logo",
           "settings": {
-            "logotitle": "Logo Slider"
+            "icon": "home",
+            "logotitle": "Logo Slider",
+            "logotext": "Logo Slider"
           }
         }
       },
@@ -106,9 +96,6 @@
         "logo_EGBKp3",
         "logo_KKrfYF",
         "logo_gDNMBg",
-        "logo_Urr8Wt",
-        "logo_3L3p3f",
-        "logo_CTJDdh",
         "logo_DaDwYW"
       ],
       "settings": {}
