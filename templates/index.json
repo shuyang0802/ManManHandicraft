@@ -146,6 +146,68 @@
         "collection": "crochet-home-decor-series",
         "rows": 1
       }
+    },
+    "collapsible_content_cmyEcj": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_eVgYjF": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What yarn is available for me? I want to customize something.",
+            "icon": "question_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_GEeMTH": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "When is your next Pop-Up?",
+            "icon": "question_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_GN3Xqx": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I Self-Collect my item?",
+            "icon": "question_mark",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "collapsible_row_ghzctx": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long do I have to wait until my customized item is done?",
+            "icon": "question_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_eVgYjF",
+        "collapsible_row_GEeMTH",
+        "collapsible_row_GN3Xqx",
+        "collapsible_row_ghzctx"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Frequently Asked Question",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image": "shopify://shop_images/Cover3.jpg",
+        "image_ratio": "small",
+        "desktop_layout": "image_first",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -153,6 +215,7 @@
     "collection_card_XdCwbz",
     "product_grid_9qLqcb",
     "product_grid_XtmTiP",
-    "product_grid_JCjeYH"
+    "product_grid_JCjeYH",
+    "collapsible_content_cmyEcj"
   ]
 }
