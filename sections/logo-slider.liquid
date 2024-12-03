@@ -32,6 +32,7 @@
   <div class="slide-track">
     {% for block in section.blocks %}
       <div class="slide">
+        <p>Debug: {{ block.settings.Logoimage }}</p>
         <img
           src="{{ block.settings.Logoimage }}"
           height="100"
