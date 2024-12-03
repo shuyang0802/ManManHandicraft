@@ -208,10 +208,28 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "logo_slider_34nx63": {
+      "type": "logo-slider",
+      "blocks": {
+        "text_3FfbLU": {
+          "type": "text",
+          "settings": {
+            "title": "Logo Slider"
+          }
+        }
+      },
+      "block_order": [
+        "text_3FfbLU"
+      ],
+      "settings": {
+        "title": "Logo Slider"
+      }
     }
   },
   "order": [
     "carousel_RwN79j",
+    "logo_slider_34nx63",
     "collection_card_XdCwbz",
     "product_grid_9qLqcb",
     "product_grid_XtmTiP",
