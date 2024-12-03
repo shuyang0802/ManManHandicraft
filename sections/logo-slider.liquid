@@ -15,7 +15,9 @@
     position: relative;
     width: auto;
   }
-
+  .slider {
+    background-color: var(--slider-background-color);
+  }
   .slider .slide-track {
     animation: scroll 30s linear infinite;
     display: flex;
@@ -45,7 +47,7 @@
   }
 </style>
 
-<div class="slider {{section.settings.slider_style}}">
+<div class="slider" style="--slider-background-color: {{ section.settings.slider_style }};">
   <div class="slide-track">
     {% for block in section.blocks %}
       <div class="slide">
