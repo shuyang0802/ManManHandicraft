@@ -88,7 +88,7 @@
           "settings": {
             "icon": "question",
             "logotitle": "Got a question?",
-            "logotext": "Tap the Whatsapp icon below. Our friendly team will get back to you :)"
+            "logotext": "Tap the Whatsapp icon below."
           }
         }
       },
@@ -99,7 +99,7 @@
         "logo_DaDwYW"
       ],
       "custom_css": [
-        "i, h3, p {color: white;}"
+        "i,h3,p {color: white;}"
       ],
       "settings": {
         "slider_style": "#eec9b6"
