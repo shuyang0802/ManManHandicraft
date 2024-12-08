@@ -1,16 +1,18 @@
 {{ 'section-carousel.css' | asset_url | stylesheet_tag }}
-  <div
+<div
   id="demo"
   class="carousel slide"
-  data-bs-ride="carousel">
+  data-bs-ride="carousel"
+>
   <!-- Indicators/dots -->
   <div class="carousel-indicators">
     {% for block in section.blocks %}
-      <button
+      <buttons
         type="button"
         data-bs-target="#demo"
         data-bs-slide-to="{{ forloop.index0 }}"
-        class="{% if forloop.first %}active{% endif %}"></button>
+        class="{% if forloop.first %}active{% endif %}"
+      ></buttons>
     {% endfor %}
   </div>
 
@@ -21,17 +23,17 @@
         class="carousel-item {% if forloop.first %}active{% endif %}"
         data-desktop-height="{{ block.settings.desktop_height | default: '500px' }}"
         data-tablet-height="{{ block.settings.tablet_height | default: '400px' }}"
-        data-mobile-height="{{ block.settings.mobile_height | default: '300px' }}">
+        data-mobile-height="{{ block.settings.mobile_height | default: '300px' }}"
+      >
         <img
           src="{{ block.settings.image | img_url: 'master' }}"
           alt="{{ block.settings.alt_text }}"
           class="d-block w-100"
           width="100%"
           height="{{ block.settings.desktop_height | default: '500px' }}"
-          style="
-      object-fit: {{ block.settings.object_fit | default: 'cover' }};
-      object-position: {{ block.settings.object_position | default: 'center' }};
-    " />
+          style="object-fit: {{ block.settings.object_fit | default: 'cover' }}; object-position: {{ block.settings.object_position | default: 'center' }};"
+          loading="lazy"
+        >
       </div>
     {% endfor %}
   </div>
@@ -41,80 +43,86 @@
     class="carousel-control-prev"
     type="button"
     data-bs-target="#demo"
-    data-bs-slide="prev">
+    data-bs-slide="prev"
+  >
     <span class="carousel-control-prev-icon"></span>
   </button>
   <button
     class="carousel-control-next"
     type="button"
     data-bs-target="#demo"
-    data-bs-slide="next">
+    data-bs-slide="next"
+  >
     <span class="carousel-control-next-icon"></span>
   </button>
 </div>
 
 {% schema %}
-  {
-    "name": "Responsive Carousel",
-    "settings": [],
-    "blocks": [
-      {
-        "type": "carousel_item",
-        "name": "Carousel Item",
-        "settings": [
-          {
-            "type": "image_picker",
-            "id": "image",
-            "label": "Image"
-          },
-          {
-            "type": "text",
-            "id": "alt_text",
-            "label": "Alt Text"
-          },
-          {
-            "type": "text",
-            "id": "desktop_height",
-            "label": "Desktop Height (e.g., 500px, 70vh)",
-            "default": "500px"
-          },
-          {
-            "type": "text",
-            "id": "tablet_height",
-            "label": "Tablet Height (e.g., 400px, 60vh)",
-            "default": "400px"
-          }, {
-            "type": "text",
-            "id": "mobile_height",
-            "label": "Mobile Height (e.g., 300px, 50vh)",
-            "default": "300px"
-          }, {
-            "type": "select",
-            "id": "object_fit",
-            "label": "Image Fit (cover, contain)",
-            "options": [
-              {
-                "value": "cover",
-                "label": "Cover"
-              }, {
-                "value": "contain",
-                "label": "Contain"
-              }
-            ],
-            "default": "cover"
-          }, {
-            "type": "text",
-            "id": "object_position",
-            "label": "Image Position (e.g., center, top, bottom)",
-            "default": "center"
-          }
-        ]
-      }
-    ],
-    "presets": [
-      {
-        "name": "Responsive Carousel"
-      }
-    ]
-  }
+{
+  "name": "Responsive Carousel",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "carousel_item",
+      "name": "Carousel Item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "alt_text",
+          "label": "Alt Text"
+        },
+        {
+          "type": "text",
+          "id": "desktop_height",
+          "label": "Desktop Height (e.g., 500px, 70vh)",
+          "default": "500px"
+        },
+        {
+          "type": "text",
+          "id": "tablet_height",
+          "label": "Tablet Height (e.g., 400px, 60vh)",
+          "default": "400px"
+        },
+        {
+          "type": "text",
+          "id": "mobile_height",
+          "label": "Mobile Height (e.g., 300px, 50vh)",
+          "default": "300px"
+        },
+        {
+          "type": "select",
+          "id": "object_fit",
+          "label": "Image Fit (cover, contain)",
+          "options": [
+            {
+              "value": "cover",
+              "label": "Cover"
+            },
+            {
+              "value": "contain",
+              "label": "Contain"
+            }
+          ],
+          "default": "cover"
+        },
+        {
+          "type": "text",
+          "id": "object_position",
+          "label": "Image Position (e.g., center, top, bottom)",
+          "default": "center"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Responsive Carousel"
+    }
+  ]
+}
 {% endschema %}
