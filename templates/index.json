@@ -58,6 +58,31 @@
     },
     "tiktok_aVhYNe": {
       "type": "tiktok",
+      "blocks": {
+        "tiktok_block_tqUkxm": {
+          "type": "tiktok_block",
+          "settings": {
+            "image": "shopify://shop_images/tik-tok.png"
+          }
+        },
+        "tiktok_block_EK8DhP": {
+          "type": "tiktok_block",
+          "settings": {
+            "image": "shopify://shop_images/Xiaohongshu.png"
+          }
+        },
+        "tiktok_block_XWKK9N": {
+          "type": "tiktok_block",
+          "settings": {
+            "image": "shopify://shop_images/instagram.png"
+          }
+        }
+      },
+      "block_order": [
+        "tiktok_block_tqUkxm",
+        "tiktok_block_EK8DhP",
+        "tiktok_block_XWKK9N"
+      ],
       "settings": {
         "custom_liquid": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/@manman_handicraft\" data-unique-id=\"manman_handicraft\" data-embed-type=\"creator\" style=\"max-width: 780px; min-width: 288px;\" > <section> <a target=\"_blank\" href=\"https://www.tiktok.com/@manman_handicraft?refer=creator_embed\">@manman_handicraft</a> </section> </blockquote> <script async src=\"https://www.tiktok.com/embed.js\"></script>",
         "title": "Follow Our Social Media",
