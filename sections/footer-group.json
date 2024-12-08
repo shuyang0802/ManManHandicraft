@@ -58,9 +58,9 @@
         "contact_info_JRXgay": {
           "type": "contact_info",
           "settings": {
-            "heading": "",
-            "text": "",
-            "icon": ""
+            "heading": "Call us",
+            "text": "+65 93418677",
+            "icon": "fas fa-phone"
           }
         },
         "contact_info_3FqDKm": {
