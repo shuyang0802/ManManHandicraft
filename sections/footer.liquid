@@ -208,21 +208,21 @@
               <span>Follow us</span>
               <a target="_blank" href="https://www.tiktok.com/@manman_handicraft?is_from_webapp=1&sender_device=pc">
                 <img
-                  src="/assets/tik-tok.png"
+                  src="{{ section.settings.tiktok_icon |  image_url }}"
                   alt="tiktok"
                   width="24"
                   height="24" />
               </a>
               <a target="_blank" href="https://www.xiaohongshu.com/user/profile/5c4fe84700000000110306b7?xhsshare=CopyLink&appuid=5c6c4468000000001001f9ac&apptime=1733621441&share_id=bc8701f416544723b14f3850af83a41b">
                 <img
-                  src="/assets/Xiaohongshu.png"
+                  src="{{ section.settings.xiaohongshu_icon |  image_url }}"
                   alt="xiaohongshu"
                   width="24"
                   height="24" />
               </a>
               <a href="https://www.instagram.com/manman_handcraft?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
                 <img
-                  src="/assets/instagram.png"
+                  src="{{ section.settings.instagram_icon |  image_url }}"
                   alt="instagram"
                   width="24"
                   height="24" />
@@ -322,6 +322,18 @@
         "type": "image_picker",
         "id": "footer_logo",
         "label": "Footer Logo"
+      }, {
+        "type": "image_picker",
+        "id": "tiktok_icon",
+        "label": "Tiktok Icon"
+      }, {
+        "type": "image_picker",
+        "id": "xiaohongshu_icon",
+        "label": "Xiaohongshu Icon"
+      }, {
+        "type": "image_picker",
+        "id": "instagram_icon",
+        "label": "Instagram Icon"
       }
     ],
     "blocks": [
