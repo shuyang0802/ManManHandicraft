@@ -760,6 +760,11 @@
         "name": "Custom Liquid"
       }
     },
+    "tiktok": {
+      "name": "TikTok",
+      "settings": {},
+      "presets": {}
+    },
     "featured-blog": {
       "name": "Blog posts",
       "settings": {
@@ -2035,7 +2040,7 @@
     },
     "main-product": {
       "name": "Product information",
-      "blocks": {
+      "bcustoocks": {
         "text": {
           "name": "Text",
           "settings": {
