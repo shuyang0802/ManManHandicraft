@@ -1,4 +1,4 @@
-{%- style -%}
+<style>
   .section-{{ section.id }}-padding {
     padding-top: calc({{ section.settings.padding_top }}px * 0.75);
     padding-bottom: calc({{ section.settings.padding_bottom }}px * 0.75);
@@ -13,8 +13,10 @@
   .schedule-section-title-0 {
     color: {{ section.settings.schedule-title-color-0 }}
      !important;
+    font-size: 32px;
   }
-{%- endstyle -%}
+</style>
+
 <div class="color-{{ section.settings.color_scheme }} gradient">
   <div class="section-{{ section.id }}-padding">
     <h3 class="schedule-section-title-0 text-center mb-5 font-family-2">
