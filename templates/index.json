@@ -77,7 +77,7 @@
           "type": "tiktok_block",
           "settings": {
             "image": "shopify://shop_images/instagram.png",
-            "social-link": "www.example.com"
+            "social-link": "https://www.instagram.com/manman_handcraft?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
           }
         }
       },
