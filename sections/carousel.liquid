@@ -26,10 +26,12 @@
           src="{{ block.settings.image | img_url: 'master' }}"
           alt="{{ block.settings.alt_text }}"
           class="d-block w-100"
+          width="100%"
+          height="{{ block.settings.desktop_height | default: '500px' }}"
           style="
       object-fit: {{ block.settings.object_fit | default: 'cover' }};
       object-position: {{ block.settings.object_position | default: 'center' }};
-    ">
+    " />
       </div>
     {% endfor %}
   </div>
@@ -111,8 +113,7 @@
     ],
     "presets": [
       {
-        "name": "Responsive Carousel",
-        "category": "Custom"
+        "name": "Responsive Carousel"
       }
     ]
   }
