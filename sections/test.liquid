@@ -5,11 +5,14 @@
   }
 
   .footer-section {
-    background-color: {{ section.settings.footer-bgcolor }};
     position: relative;
   }
+  .footer-top {
+    background-color: {{ section.settings.footer-bgcolor }};
+  }
+
   .footer-cta {
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #373636;
   }
 
   .single-cta i {
@@ -24,16 +27,18 @@
     display: inline-block;
   }
 
-  .heading-color {
+  .cta-text h4 {
+    color: #fff;
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 2px;
-    color: {{ section.settings.heading-color }};
   }
-  .text-color {
+
+  .cta-text span {
+    color: #757575;
     font-size: 15px;
-    color: {{ section.settings.text-color }};
   }
+
   .footer-content {
     position: relative;
     z-index: 2;
@@ -53,14 +58,13 @@
   }
 
   .footer-logo img {
-    border-radius: 50%;
     max-width: 200px;
   }
 
   .footer-text p {
     margin-bottom: 14px;
     font-size: 14px;
-    color: #fff;
+    color: #7e7e7e;
     line-height: 28px;
   }
 
@@ -115,7 +119,7 @@
     bottom: -15px;
     height: 2px;
     width: 50px;
-    background: #EB6D9C;
+    background: #ff5e14;
   }
 
   .footer-widget ul li {
@@ -126,12 +130,11 @@
   }
 
   .footer-widget ul li a:hover {
-    color: #EB6D9C;
-    text-decoration: none;
+    color: #ff5e14;
   }
 
   .footer-widget ul li a {
-    color: #fff;
+    color: #878787;
     text-transform: capitalize;
   }
 
@@ -143,17 +146,17 @@
   .subscribe-form input {
     width: 100%;
     padding: 14px 28px;
-    background: #fff;
-    border: 1px solid #fff;
-    color: #222;
+    background: #2E2E2E;
+    border: 1px solid #2E2E2E;
+    color: #fff;
   }
 
   .subscribe-form button {
     position: absolute;
     right: 0;
-    background: #EB6D9C;
+    background: #ff5e14;
     padding: 13px 20px;
-    border: 1px solid #EB6D9C;
+    border: 1px solid #ff5e14;
     top: 0;
   }
 
@@ -162,6 +165,7 @@
     font-size: 22px;
     transform: rotate(-6deg);
   }
+
   .copyright-area {
     background-color: {{ section.settings.copyright-bgcolor }};
     padding: 25px 0;
@@ -171,23 +175,43 @@
     margin: 0;
     font-size: 14px;
   }
+
+  .copyright-text p a {
+    color: #ff5e14;
+  }
+
+  .footer-menu li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+
+  .footer-menu li:hover a {
+    color: #ff5e14;
+  }
+
+  .footer-menu li a {
+    font-size: 14px;
+    color: #878787;
+  }
 </style>
 
 <footer class="footer-section">
   <div class="container footer-top">
     <div class="footer-cta pt-5 pb-5">
       <div class="row">
-        {% for block in section.blocks %}
-          <div class="col-xl-4 col-md-4 mb-30">
-            <div class="single-cta">
-              <i class="{{ block.settings.icon }}"></i>
-              <div class="cta-text">
-                <h4 class="heading-color">{{ block.settings.heading }}</h4>
-                <span class="text-color">{{ block.settings.text }}</span>
+        <div class="contact-block">
+          {% for block in section.blocks %}
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="{{ block.settings.icon }}"></i>
+                <div class="cta-text">
+                  <h4>{{ block.settings.heading }}</h4>
+                  <span>{{ block.settings.text }}</span>
+                </div>
               </div>
             </div>
-          </div>
-        {% endfor %}
+          {% endfor %}
+        </div>
       </div>
     </div>
     <div class="footer-content pt-5 pb-5">
@@ -195,9 +219,9 @@
         <div class="col-xl-4 col-lg-4 mb-50">
           <div class="footer-widget">
             <div class="footer-logo">
-              <a href="/">
+              <a href="index.html">
                 <img
-                  src="{{ section.settings.footer_logo | image_url }}"
+                  src="https://i.ibb.co/QDy827D/ak-logo.png"
                   width="100"
                   height="100"
                   class="img-fluid"
@@ -206,26 +230,14 @@
             </div>
             <div class="footer-social-icon">
               <span>Follow us</span>
-              <a target="_blank" href="https://www.tiktok.com/@manman_handicraft?is_from_webapp=1&sender_device=pc">
-                <img
-                  src="/assets/tik-tok.png"
-                  alt="tiktok"
-                  width="24"
-                  height="24" />
+              <a href="#">
+                <i class="fab fa-facebook-f facebook-bg"></i>
               </a>
-              <a target="_blank" href="https://www.xiaohongshu.com/user/profile/5c4fe84700000000110306b7?xhsshare=CopyLink&appuid=5c6c4468000000001001f9ac&apptime=1733621441&share_id=bc8701f416544723b14f3850af83a41b">
-                <img
-                  src="/assets/Xiaohongshu.png"
-                  alt="xiaohongshu"
-                  width="24"
-                  height="24" />
+              <a href="#">
+                <i class="fab fa-twitter twitter-bg"></i>
               </a>
-              <a href="https://www.instagram.com/manman_handcraft?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-                <img
-                  src="/assets/instagram.png"
-                  alt="instagram"
-                  width="24"
-                  height="24" />
+              <a href="#">
+                <i class="fab fa-google-plus-g google-bg"></i>
               </a>
             </div>
           </div>
@@ -236,11 +248,16 @@
               <h3>Useful Links</h3>
             </div>
             <ul>
-              {% for link in linklists[section.settings.footer_menu].links %}
-                <li>
-                  <a href="{{ link.url }}">{{ link.title }}</a>
-                </li>
-              {% endfor %}
+              <li><a href="#">Home</a></li>
+              <li><a href="#">about</a></li>
+              <li><a href="#">services</a></li>
+              <li><a href="#">portfolio</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Our Services</a></li>
+              <li><a href="#">Expert Team</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Latest News</a></li>
             </ul>
           </div>
         </div>
@@ -286,42 +303,21 @@
         "id": "footer-bgcolor",
         "label": "Footer Background Color",
         "default": "#000000"
-      },
-      {
+      }, {
         "type": "color",
         "id": "copyright-bgcolor",
         "label": "Copyright Background Color",
         "default": "#2E2E2E"
-      },
-      {
+      }, {
         "type": "color",
         "id": "copyright-text-color",
         "label": "Copyright Text Color",
         "default": "#878787"
-      },
-      {
+      }, {
         "type": "color",
         "id": "footer-cta-color",
         "label": "Footer CTA Color",
         "default": "#878787"
-      }, {
-        "type": "color",
-        "id": "heading-color",
-        "label": "Text Color",
-        "default": "#878787"
-      }, {
-        "type": "color",
-        "id": "text-color",
-        "label": "Text Color",
-        "default": "#878787"
-      }, {
-        "type": "link_list",
-        "id": "footer_menu",
-        "label": "Select Footer Menu"
-      }, {
-        "type": "image_picker",
-        "id": "footer_logo",
-        "label": "Footer Logo"
       }
     ],
     "blocks": [
