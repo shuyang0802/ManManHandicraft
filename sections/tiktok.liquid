@@ -15,6 +15,14 @@
      !important;
     font-size: 32px;
   }
+  .social-icon{
+    list-style: none !important;
+    text-decoration: none !important;
+    color: #222;
+  }
+  .social-icon h3:hover{
+    color: #EB6D9C;
+  }
 </style>
 
 <div class="color-{{ section.settings.color_scheme }} gradient">
@@ -23,21 +31,24 @@
       <span>{{ section.settings.title }}</span>
     </h3>
     {{ section.settings.custom_liquid }}
-  </div>
-  <div>
-    <div class="container">
-      <div class="row">
-        {% for blocks in section.blocks %}
-          <div class="col-md-4 col-lg-4 col-sm-12">
-            <img
-              src="{{ blocks.settings.image | image_url}} "
-              width="200px"
-              height="200px"
-              alt="{{ blocks.settings.title }}"
-              class="img-fluid"
-            >
-          </div>
-        {% endfor %}
+    <div>
+      <div class="container my-5">
+        <div class="row">
+          {% for blocks in section.blocks %}
+            <div class="col-md-4 col-lg-4 col-sm-12 d-flex align-items-center justify-content-center">
+              <a target="_blank" href="{{ blocks.settings.social-link  }}" class="social-icon">
+                <img
+                  src="{{ blocks.settings.image | image_url}} "
+                  width="150px"
+                  height="150px"
+                  alt="{{ blocks.settings.title }}"
+                  class="img-fluid"
+                >
+                <h3 class="text-center mt-3">Click Here</h3>
+              </a>
+            </div>
+          {% endfor %}
+        </div>
       </div>
     </div>
   </div>
@@ -107,6 +118,12 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "social-link",
+          "label": "Social Media Link",
+          "default": "www.example.com"
         }
       ]
     }
