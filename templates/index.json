@@ -62,19 +62,22 @@
         "tiktok_block_tqUkxm": {
           "type": "tiktok_block",
           "settings": {
-            "image": "shopify://shop_images/tik-tok.png"
+            "image": "shopify://shop_images/tik-tok.png",
+            "social-link": "https://www.tiktok.com/@manman_handicraft?is_from_webapp=1&sender_device=pc"
           }
         },
         "tiktok_block_EK8DhP": {
           "type": "tiktok_block",
           "settings": {
-            "image": "shopify://shop_images/Xiaohongshu.png"
+            "image": "shopify://shop_images/Xiaohongshu.png",
+            "social-link": "www.example.com"
           }
         },
         "tiktok_block_XWKK9N": {
           "type": "tiktok_block",
           "settings": {
-            "image": "shopify://shop_images/instagram.png"
+            "image": "shopify://shop_images/instagram.png",
+            "social-link": "www.example.com"
           }
         }
       },
