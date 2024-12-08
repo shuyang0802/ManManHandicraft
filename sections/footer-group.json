@@ -66,9 +66,9 @@
         "contact_info_3FqDKm": {
           "type": "contact_info",
           "settings": {
-            "heading": "",
-            "text": "",
-            "icon": ""
+            "heading": "Email us",
+            "text": "mangmangcrochet@gmail.com",
+            "icon": "far fa-envelope-open"
           }
         }
       },
