@@ -150,28 +150,25 @@
         "circle_image_DVBTpP": {
           "type": "Circle-Image",
           "settings": {
-            "image": "shopify://shop_images/Cover_7350b9ce-d3c4-41f0-bd4c-b1d38a70cbb0.jpg",
+            "circle-image": "shopify://shop_images/Cover_7350b9ce-d3c4-41f0-bd4c-b1d38a70cbb0.jpg",
             "link": ""
           }
         },
         "circle_image_7jGfBF": {
           "type": "Circle-Image",
           "settings": {
-            "image": "shopify://shop_images/Cover3.jpg",
             "link": ""
           }
         },
         "circle_image_dhJXfT": {
           "type": "Circle-Image",
           "settings": {
-            "image": "shopify://shop_images/Cover2.jpg",
             "link": ""
           }
         },
         "circle_image_VgxdNK": {
           "type": "Circle-Image",
           "settings": {
-            "image": "shopify://shop_images/Image_20241016230228.jpg",
             "link": ""
           }
         }
