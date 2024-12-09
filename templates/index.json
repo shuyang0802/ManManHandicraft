@@ -135,9 +135,9 @@
       ],
       "settings": {
         "animation": "",
-        "paddingsection": "0px 0px 0px 0px",
+        "paddingsection": "50px 0px 50px 0px",
         "marginsection": "0px 0px 0px 0px",
-        "bgsection": "#ffffff"
+        "bgsection": "#c44c4c"
       }
     },
     "logo_slider_zL6hq9": {
