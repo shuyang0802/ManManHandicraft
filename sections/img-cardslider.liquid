@@ -1,84 +1,21 @@
-<!-- featured-products.liquid -->
-<style>
-    .section-block {
-      position: relative;
-    }
-    @media only screen and (min-width: 750px) {
-      .section-title-1 {
-        font-size: 40px;
-      }
-    }
-    .section-title-1 {
-      font-size: 30px;
-      @include media-query($medium-up) {
-        font-size: 40px;
-      }
-      > span {
-        position: relative;
-        // &:after{
-        // content:"";
-        // display:block;
-        // position:absolute;
-        // height:3px;
-        // width:100%;
-        // left:0;
-        // bottom: -8px;
-        // background:var(--g-main);
-      }
-    }
-  }
-  .section-title-0 {
-    font-size: 34px;
-    font-weight: 500;
-  }
-  .font-family-2 {
-    font-family: var(--g-font-2);
-  }
-</style>
+<style></style>
 
 <div class="customstyle{{ section.id }}" data-aos="{{section.settings.animation}}">
   {%- include 'style-section' -%}
-  <div class="{{ section.settings.setwidth }}">
-    <div class="section-block">
-      {%- include 'section-heading' -%}
-      {%- assign collection = collections[section.settings.collection] -%}
-      {%- assign rows = section.settings.rows -%}
-      {%- if collection != blank -%}
-        {%- assign product_limit = rows | times: 4 -%}
-        <div class="row">
-          {%- for product in collection.products limit: product_limit -%}
-            <div class="mb-5 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-6 {% if forloop.index > 4 %}small--hide{% endif %}">
-              {%- include 'product-card', product: product, collection: collection -%}
-            </div>
-          {%- endfor -%}
-        </div>
-      {%- else -%}
-        <div class="row">
-          {%- assign product_limit = rows | times: 4 -%}
-          {%- for i in (1..product_limit) -%}
-            {%- case i -%}
-              {%- when 7 -%}
-                {%- assign index = 1 -%}
-              {%- when 8 -%}
-                {%- assign index = 2 -%}
-              {%- when 9 -%}
-                {%- assign index = 3 -%}
-              {%- else -%}
-                {%- assign index = i -%}
-            {%- endcase -%}
-            <div class="col-md-3 col-sm-6 col-xs-6 {% if forloop.index > 4 %}small--hide{% endif %}">
-              {%- include 'product-grid-blank' -%}
-            </div>
-          {%- endfor -%}
-        </div>
-      {%- endif -%}
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-lg-4">
+        <h3>{{ section.settings.heading }}</h3>
+        <p>{{ section.settings.subheading }}</p>
+        <button>{{ section.settings.button }}</button>
+      </div>
     </div>
   </div>
 </div>
+
 {% schema %}
 {
-  "name": "Product grid",
-  "class": "index-section",
+  "name": "Image Card Slider",
   "settings": [
     {
       "type": "select",
@@ -220,54 +157,27 @@
       "default": "#ffffff"
     },
     {
-      "type": "select",
-      "id": "setwidth",
-      "label": "Full Width",
-      "default": "container",
-      "options": [
-        {
-          "value": "container",
-          "label": "Box"
-        },
-        {
-          "value": "container-fluid",
-          "label": "Container Fluid"
-        },
-        {
-          "value": "full",
-          "label": "Full"
-        }
-      ]
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Heading"
     },
     {
       "type": "text",
-      "id": "title",
-      "label": "Title",
-      "default": "Product list"
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Subheading"
     },
     {
-      "type": "textarea",
-      "id": "des",
-      "label": "HTML / Description"
-    },
-    {
-      "type": "collection",
-      "id": "collection",
-      "label": "Collection"
-    },
-    {
-      "type": "range",
-      "id": "rows",
-      "label": "Rows",
-      "min": 1,
-      "max": 3,
-      "step": 1,
-      "default": 2
+      "type": "text",
+      "id": "button",
+      "label": "Button",
+      "default": "Button"
     }
   ],
   "presets": [
     {
-      "name": "Product grid"
+      "name": "Image Card Slider"
     }
   ]
 }
