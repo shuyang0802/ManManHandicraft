@@ -312,7 +312,7 @@
     "product_grid_JCjeYH": {
       "type": "product-grid",
       "custom_css": [
-        "h3 {color: #222; text-transform: uppercase !important;}"
+        "h3 {color: #fff; text-transform: uppercase !important;}"
       ],
       "settings": {
         "animation": "",
