@@ -144,6 +144,48 @@
         "slider_style": "#eec9b6"
       }
     },
+    "img_cardslider_CRak8R": {
+      "type": "img-cardslider",
+      "blocks": {
+        "img_cardslider_KMLMRe": {
+          "type": "img_cardslider",
+          "settings": {
+            "image": "shopify://shop_images/Image_20240927220547.jpg"
+          }
+        },
+        "img_cardslider_QmDxxq": {
+          "type": "img_cardslider",
+          "settings": {
+            "image": "shopify://shop_images/Image_20240927220516.jpg"
+          }
+        },
+        "img_cardslider_brUJBb": {
+          "type": "img_cardslider",
+          "settings": {
+            "image": "shopify://shop_images/Image_20240927220512.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "img_cardslider_KMLMRe",
+        "img_cardslider_QmDxxq",
+        "img_cardslider_brUJBb"
+      ],
+      "settings": {
+        "animation": "",
+        "paddingsection": "50px 0px 50px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "bgsection": "#eec9b6",
+        "heading": "Crafting Memories, One Stitch at a Time",
+        "subheading": "Unique, handcrafted crochet pieces designed with love and precision.",
+        "button": "Shop Now",
+        "button-link": "shopify://collections/all",
+        "title_color": "#ffffff",
+        "subtitle_color": "#ffffff",
+        "button_color": "#eb6d9c",
+        "button_text_color": "#ffffff"
+      }
+    },
     "collection_card_XdCwbz": {
       "type": "collection-card",
       "blocks": {
@@ -306,48 +348,6 @@
         "padding_bottom": 36
       }
     },
-    "img_cardslider_CRak8R": {
-      "type": "img-cardslider",
-      "blocks": {
-        "img_cardslider_KMLMRe": {
-          "type": "img_cardslider",
-          "settings": {
-            "image": "shopify://shop_images/Image_20240927220547.jpg"
-          }
-        },
-        "img_cardslider_QmDxxq": {
-          "type": "img_cardslider",
-          "settings": {
-            "image": "shopify://shop_images/Image_20240927220516.jpg"
-          }
-        },
-        "img_cardslider_brUJBb": {
-          "type": "img_cardslider",
-          "settings": {
-            "image": "shopify://shop_images/Image_20240927220512.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "img_cardslider_KMLMRe",
-        "img_cardslider_QmDxxq",
-        "img_cardslider_brUJBb"
-      ],
-      "settings": {
-        "animation": "",
-        "paddingsection": "50px 0px 50px 0px",
-        "marginsection": "0px 0px 0px 0px",
-        "bgsection": "#eec9b6",
-        "heading": "Crafting Memories, One Stitch at a Time",
-        "subheading": "Unique, handcrafted crochet pieces designed with love and precision.",
-        "button": "Shop Now",
-        "button-link": "shopify://collections/all",
-        "title_color": "#ffffff",
-        "subtitle_color": "#ffffff",
-        "button_color": "#eb6d9c",
-        "button_text_color": "#ffffff"
-      }
-    },
     "newsletter_aVpVET": {
       "type": "newsletter",
       "blocks": {
@@ -386,12 +386,12 @@
     "carousel_RwN79j",
     "tiktok_aVhYNe",
     "logo_slider_zL6hq9",
+    "img_cardslider_CRak8R",
     "collection_card_XdCwbz",
     "product_grid_9qLqcb",
     "product_grid_XtmTiP",
     "product_grid_JCjeYH",
     "collapsible_content_cmyEcj",
-    "img_cardslider_CRak8R",
     "newsletter_aVpVET"
   ]
 }
