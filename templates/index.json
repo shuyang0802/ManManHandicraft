@@ -150,7 +150,6 @@
         "circle_image_DVBTpP": {
           "type": "Circle-Image",
           "settings": {
-            "circle-image": "shopify://shop_images/Cover_7350b9ce-d3c4-41f0-bd4c-b1d38a70cbb0.jpg",
             "link": ""
           }
         },
