@@ -144,6 +144,51 @@
         "slider_style": "#eec9b6"
       }
     },
+    "circle_image_xe4MnB": {
+      "type": "circle-image",
+      "blocks": {
+        "circle_image_DVBTpP": {
+          "type": "Circle-Image",
+          "settings": {
+            "image": "shopify://shop_images/Cover_7350b9ce-d3c4-41f0-bd4c-b1d38a70cbb0.jpg",
+            "link": ""
+          }
+        },
+        "circle_image_7jGfBF": {
+          "type": "Circle-Image",
+          "settings": {
+            "image": "shopify://shop_images/Cover3.jpg",
+            "link": ""
+          }
+        },
+        "circle_image_dhJXfT": {
+          "type": "Circle-Image",
+          "settings": {
+            "image": "shopify://shop_images/Cover2.jpg",
+            "link": ""
+          }
+        },
+        "circle_image_VgxdNK": {
+          "type": "Circle-Image",
+          "settings": {
+            "image": "shopify://shop_images/Image_20241016230228.jpg",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "circle_image_DVBTpP",
+        "circle_image_7jGfBF",
+        "circle_image_dhJXfT",
+        "circle_image_VgxdNK"
+      ],
+      "settings": {
+        "animation": "",
+        "paddingsection": "50px 0px 50px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "bgsection": "#ffffff"
+      }
+    },
     "collection_card_XdCwbz": {
       "type": "collection-card",
       "blocks": {
@@ -269,7 +314,7 @@
         "animation": "",
         "paddingsection": "50px 0px 50px 0px",
         "marginsection": "0px 0px 0px 0px",
-        "bgsection": "#fff",
+        "bgsection": "#ffffff",
         "setwidth": "container",
         "title": "Crochet Home Decor Series",
         "des": "",
@@ -386,6 +431,7 @@
     "carousel_RwN79j",
     "tiktok_aVhYNe",
     "logo_slider_zL6hq9",
+    "circle_image_xe4MnB",
     "collection_card_XdCwbz",
     "img_cardslider_CRak8R",
     "product_grid_XtmTiP",
