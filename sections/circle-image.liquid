@@ -1,20 +1,60 @@
-<style></style>
+<style>
+  .circle-image,
+  .cir-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+  .circle-image:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  .overlay-button {
+    position: absolute; /* 绝对定位 */
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7); /* 半透明背景 */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    display: none;
+    color: white;
+  }
+
+  .circle-image:hover .overlay-button {
+    display: block !important; /* 鼠标悬停时显示按钮 */
+  }
+  .overlay-button:hover {
+    text-decoration: none;
+    font-size: 14px;
+    color: #eb6d9c;
+  }
+</style>
 
 <div class="customstyle{{ section.id }}" data-aos="{{section.settings.animation}}">
   {%- render 'style-section' -%}
   <div class="container">
     <div class="row">
       {% for block in section.blocks %}
-        <div class="col-lg-4 col-md-6 col-sm-6">
-          <a href="{{ block.settings.link }}">
+        <div class="col-lg-3 col-md-6 col-sm-6 align-self-center justify-content-center">
+          <div class="circle-image">
             <img
               src="{{ block.settings.circle-image |  image_url  }}"
+              class="cir-img"
               alt="image"
-              class="img-fluid"
               width="100%"
               height="100%"
             >
-          </a>
+            <a href="{{ block.settings.link }}" class="overlay-button">
+              {{ block.settings['button-text'] }}
+            </a>
+          </div>
         </div>
       {% endfor %}
     </div>
@@ -179,6 +219,12 @@
           "type": "collection",
           "id": "link",
           "label": "Link"
+        },
+        {
+          "type": "text",
+          "id": "button-text",
+          "label": "Button Text",
+          "default": "Learn More"
         }
       ]
     }
