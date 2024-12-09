@@ -1,17 +1,98 @@
-<style></style>
+<style>
+    .cardslider-title {
+      font-size: 2.5vw;
+      font-weight: 900;
+      color: {{ section.settings.title_color }};
+    }
+    .cardslider-subtitle {
+      font-size: 1.5vw;
+      color:{{ section.settings.subtitle_color }}
+    }
+    .cardslider-button {
+      font-size: 1.5vw;
+      border-radius: 10px;
+      border: none;
+      padding: 10px 20px;
+      background-color: {{ section.settings.button_color }};
+      color: {{ section.settings.button_text_color  }};
+      text-decoration: none;
+    }
+    .cardslider-button:hover{
+        color: #fff;
+        text-decoration: none;
+    }
+    .swiper{
+    width: 100%;
+    }
+    .swiper-wrapper{
+    width: 100%;
+    height: 35em;
+    display: flex;
+    align-items: center;
+    }
+    .cardslider{
+    width: 20em;
+    height: 90%;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 0 2em rgba(0, 0, 0, .2);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 2em;
+    }
+    .cardslider img{
+    border-radius: 25px ;
+
+    }
+  .swiper-slide:not(.swiper-slide-active){
+    filter: blur(1px);
+  }
+</style>
 
 <div class="customstyle{{ section.id }}" data-aos="{{section.settings.animation}}">
-  {%- include 'style-section' -%}
+  {%- render 'style-section' -%}
   <div class="container">
     <div class="row">
-      <div class="col-sm-12 col-lg-4">
-        <h3>{{ section.settings.heading }}</h3>
-        <p>{{ section.settings.subheading }}</p>
-        <button>{{ section.settings.button }}</button>
+      <div class="col-sm-12 col-lg-5 align-self-center">
+        <h3 class="cardslider-title">{{ section.settings.heading }}</h3>
+        <p class="cardslider-subtitle">{{ section.settings.subheading }}</p>
+        <a class="cardslider-button" href="{{ section.settings.button-link }}">
+          {{ section.settings.button }}
+        </a>
+      </div>
+      <div class="col-sm-12 col-lg-7">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            {% for block in section.blocks %}
+              <div class="cardslider swiper-slide">
+                <img src="{{ block.settings.image | image_url }}" alt="card image" width="100%" height="100%">
+              </div>
+            {% endfor %}
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
+{% javascript %}
+  const swiper = new Swiper('.mySwiper', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 300,
+      modifier: 1,
+      slideShadows: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  });
+{% endjavascript %}
 
 {% schema %}
 {
@@ -173,11 +254,58 @@
       "id": "button",
       "label": "Button",
       "default": "Button"
+    },
+    {
+      "type": "page",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "subtitle_color",
+      "label": "Subtitle Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_color",
+      "label": "Button Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button Text Color",
+      "default": "#ffffff"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "img_cardslider",
+      "name": "Image Card Slider",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
     }
   ],
   "presets": [
     {
-      "name": "Image Card Slider"
+      "name": "Image Card Slider",
+      "blocks": [
+        {
+          "type": "img_cardslider"
+        }
+      ]
     }
   ]
 }
