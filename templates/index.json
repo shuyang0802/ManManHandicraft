@@ -308,6 +308,31 @@
     },
     "img_cardslider_CRak8R": {
       "type": "img-cardslider",
+      "blocks": {
+        "img_cardslider_KMLMRe": {
+          "type": "img_cardslider",
+          "settings": {
+            "image": "shopify://shop_images/Image_20240927220547.jpg"
+          }
+        },
+        "img_cardslider_QmDxxq": {
+          "type": "img_cardslider",
+          "settings": {
+            "image": "shopify://shop_images/Image_20240927220516.jpg"
+          }
+        },
+        "img_cardslider_brUJBb": {
+          "type": "img_cardslider",
+          "settings": {
+            "image": "shopify://shop_images/Image_20240927220512.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "img_cardslider_KMLMRe",
+        "img_cardslider_QmDxxq",
+        "img_cardslider_brUJBb"
+      ],
       "settings": {
         "animation": "",
         "paddingsection": "50px 0px 50px 0px",
