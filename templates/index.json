@@ -341,7 +341,7 @@
         "heading": "Crafting Memories, One Stitch at a Time",
         "subheading": "Unique, handcrafted crochet pieces designed with love and precision.",
         "button": "Shop Now",
-        "button_link": "about-us",
+        "button_link": "shopify://collections/all",
         "title_color": "#ffffff",
         "subtitle_color": "#ffffff",
         "button_color": "#eb6d9c",
