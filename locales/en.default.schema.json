@@ -736,6 +736,23 @@
         "name": "Collection Card"
       }
     },
+    "contacts": {
+      "form": {
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone Number",
+        "job": "Job",
+        "story": "Story",
+        "message": "Message",
+        "send": "Send",
+        "question": "Question",
+        "send_message": "Send message",
+        "send_question": "Send question",
+        "receive_info": "Receive email",
+        "post_success": "Thanks for contacting us. We'll get back to you as soon as possible.",
+        "question_success": "Thanks for your question. We'll get back to you as soon as possible."
+      }
+    },
     "contact-form": {
       "name": "Contact Form",
       "presets": {
