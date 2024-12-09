@@ -144,6 +144,46 @@
         "slider_style": "#eec9b6"
       }
     },
+    "collection_card_XdCwbz": {
+      "type": "collection-card",
+      "blocks": {
+        "featured_collection_mGnh4C": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "crochet-dolls-1"
+          }
+        },
+        "featured_collection_Cw4Yhp": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "crochet-flower-bouquet"
+          }
+        },
+        "featured_collection_DAU4FT": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "crochet-home-decor-series"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_mGnh4C",
+        "featured_collection_Cw4Yhp",
+        "featured_collection_DAU4FT"
+      ],
+      "settings": {
+        "title": "CHRISTMAS TREND",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "img_cardslider_CRak8R": {
       "type": "img-cardslider",
       "blocks": {
@@ -186,44 +226,21 @@
         "button_text_color": "#ffffff"
       }
     },
-    "collection_card_XdCwbz": {
-      "type": "collection-card",
-      "blocks": {
-        "featured_collection_mGnh4C": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "crochet-dolls-1"
-          }
-        },
-        "featured_collection_Cw4Yhp": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "crochet-flower-bouquet"
-          }
-        },
-        "featured_collection_DAU4FT": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "crochet-home-decor-series"
-          }
-        }
-      },
-      "block_order": [
-        "featured_collection_mGnh4C",
-        "featured_collection_Cw4Yhp",
-        "featured_collection_DAU4FT"
+    "product_grid_XtmTiP": {
+      "type": "product-grid",
+      "custom_css": [
+        "h3 {text-transform: uppercase;}"
       ],
       "settings": {
-        "title": "CHRISTMAS TREND",
-        "heading_size": "h1",
-        "image_ratio": "square",
-        "columns_desktop": 3,
-        "color_scheme": "",
-        "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "animation": "",
+        "paddingsection": "0px 0px 0px 0px",
+        "marginsection": "50px 0px 50px 0px",
+        "bgsection": "#ffffff",
+        "setwidth": "container",
+        "title": "Crochet Flower Bouquet",
+        "des": "",
+        "collection": "crochet-flower-bouquet",
+        "rows": 2
       }
     },
     "product_grid_9qLqcb": {
@@ -243,33 +260,16 @@
         "rows": 1
       }
     },
-    "product_grid_XtmTiP": {
-      "type": "product-grid",
-      "custom_css": [
-        "h3 {text-transform: uppercase;}"
-      ],
-      "settings": {
-        "animation": "",
-        "paddingsection": "0px 0px 0px 0px",
-        "marginsection": "50px 0px 50px 0px",
-        "bgsection": "#ffffff",
-        "setwidth": "container",
-        "title": "Crochet Flower Bouquet",
-        "des": "",
-        "collection": "crochet-flower-bouquet",
-        "rows": 2
-      }
-    },
     "product_grid_JCjeYH": {
       "type": "product-grid",
       "custom_css": [
-        "h3 {color: #fff; text-transform: uppercase !important;}"
+        "h3 {color: #222; text-transform: uppercase !important;}"
       ],
       "settings": {
         "animation": "",
         "paddingsection": "50px 0px 50px 0px",
         "marginsection": "0px 0px 0px 0px",
-        "bgsection": "#eec9b6",
+        "bgsection": "#fff",
         "setwidth": "container",
         "title": "Crochet Home Decor Series",
         "des": "",
@@ -386,10 +386,10 @@
     "carousel_RwN79j",
     "tiktok_aVhYNe",
     "logo_slider_zL6hq9",
-    "img_cardslider_CRak8R",
     "collection_card_XdCwbz",
-    "product_grid_9qLqcb",
+    "img_cardslider_CRak8R",
     "product_grid_XtmTiP",
+    "product_grid_9qLqcb",
     "product_grid_JCjeYH",
     "collapsible_content_cmyEcj",
     "newsletter_aVpVET"
