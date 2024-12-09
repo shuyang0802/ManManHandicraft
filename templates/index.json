@@ -150,24 +150,28 @@
         "circle_image_DVBTpP": {
           "type": "Circle-Image",
           "settings": {
+            "circle-image": "shopify://shop_images/Image_20241016230212.jpg",
             "link": ""
           }
         },
         "circle_image_7jGfBF": {
           "type": "Circle-Image",
           "settings": {
+            "circle-image": "shopify://shop_images/Image_20241016230233.jpg",
             "link": ""
           }
         },
         "circle_image_dhJXfT": {
           "type": "Circle-Image",
           "settings": {
+            "circle-image": "shopify://shop_images/Image_20241016230228.jpg",
             "link": ""
           }
         },
         "circle_image_VgxdNK": {
           "type": "Circle-Image",
           "settings": {
+            "circle-image": "shopify://shop_images/Image_20241016230223.jpg",
             "link": ""
           }
         }
@@ -182,7 +186,7 @@
         "animation": "",
         "paddingsection": "50px 0px 50px 0px",
         "marginsection": "0px 0px 0px 0px",
-        "bgsection": "#ad2c34"
+        "bgsection": "#fff"
       }
     },
     "collection_card_XdCwbz": {
