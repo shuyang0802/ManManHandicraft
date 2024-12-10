@@ -10,8 +10,6 @@
 
 .pagination__list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 .pagination__list > li {
