@@ -36,31 +36,6 @@
   }
 {%- endstyle -%}
 
-
-
-
-<div class="collection-page">
-
-<!-- 顶部分类导航栏 -->
-<nav class="top-categories">
-  <ul class="category-list">
-    {% for collection in collections %}
-      <li class="category-item">
-        <!-- 确保使用 current_collection.handle 判断当前页面的 Collection -->
-        <a href="{{ collection.url }}" class="{% if current_collection and collection.handle == current_collection.handle %}active{% endif %}">
-          {{ collection.title }}
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
-</nav>
-
-
-
-
-
-
-
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
   {%- paginate collection.products by section.settings.products_per_page -%}
     {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
@@ -83,10 +58,6 @@
           %}
         </aside>
       {%- endif -%}
-
-
-
- 
 
       <div
         class="product-grid-container{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
