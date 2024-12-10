@@ -5,8 +5,7 @@
       color:{{settings.color_breadcrumbs}} ;
       padding:40px 0;
       margin:0;
-      background:{{settings.bg_breadcrumb}};
-    }
+      background:{{settings.bg_breadcrumb}};}
     .g-breadcrumb a,.g-breadcrumb span{padding:0 3px;font-size:15px;line-height:20px;display:inline-block;}
     .g-breadcrumb a{
       color:{{settings.color_breadcrumbs_active}};
@@ -28,7 +27,7 @@
       }
     }
     .g-breadcrumb.breadcrumbs-style_2::before{
-      background:rgba(0,0,0,{{ settings.limit_ranger }});
+      background:rgba(0,0,0,{{settings.limit_ranger}});
       position: absolute;
       z-index: 1;
       content:"";
@@ -38,7 +37,7 @@
       top: 0;
     }
     .br-title{
-      color:{{ settings.color_breadcrumbs }}
+      color:{{settings.color_breadcrumbs}}
     }
     .br-title svg{
       width: 23px;
@@ -48,21 +47,21 @@
   {% assign bgimage = settings.img_breadcrumb %}
   {% comment %}
     {% if template contains 'collection' and collection.handle %}
-      {% assign bgimage = settings.img_breadcrumb %}
+      {% assign bgimage = collection.image.src %}
       {% if collection.image.src == blank %}
         {% assign bgimage = settings.img_breadcrumb %}
       {% endif %}
     {% elsif template contains 'product' and collection.handle %}
-      {% assign bgimage = settings.img_breadcrumb %}
+      {% assign bgimage = collection.image.src %}
     {% endif %}
   {% endcomment %}
-  <div class="{{ settings.layout_bread }}">
+  <div class="{{settings.layout_bread}}">
     <nav
-      class="lazyloaded breadcrumbs-{{ settings.style_breadcrumb }} breadcrumb g-breadcrumb text-{{ settings.align_bread }}"
+      class="breadcrumbs-{{settings.style_breadcrumb}} breadcrumb g-breadcrumb lazyload text-{{settings.align_bread}}"
       role="navigation"
       aria-label="breadcrumbs"
       {% unless settings.style_breadcrumb == 'style_1' %}
-        data-bgset="{%- render 'bgset', image: bgimage -%}" data-sizes="auto" data-parent-fit="cover"
+        data-bgset="{%- include 'bgset', image: bgimage -%}" data-sizes="auto" data-parent-fit="cover"
       {% endunless %}
     >
       <div class="{{settings.layout_bread}}">
@@ -76,7 +75,7 @@
           {% elsif template contains 'blog' %}
             <h3 class="mb-2 h1 br-title font-family-2">
               {{ blog.title }}
-              {%- render 'icon-rss' -%}
+              {%- include 'icon-rss' -%}
             </h3>
           {% endif %}
         {% endif %}
