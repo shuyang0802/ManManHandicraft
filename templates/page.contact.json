@@ -42,6 +42,9 @@
         "contact_inputs_W93UTc",
         "contact_inputs_HxqjW3"
       ],
+      "custom_css": [
+        "img{width: 30px; height:30px}"
+      ],
       "settings": {
         "heading": "<strong>Need Help With Your Order? Contact us!</strong>",
         "subtitle": "Our Customer Experience team operates between Monday to Friday (9am - 6pm). If you're reaching out to us outside of working hours, we appreciate your patience in getting back to you.",
