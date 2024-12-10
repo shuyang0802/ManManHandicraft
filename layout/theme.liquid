@@ -40,7 +40,7 @@
         &ndash; {{ shop.name -}}
       {%- endunless -%}
     </title>
-    {%- include 'header-css' -%}
+    {%- render 'header-css' -%}
     <style>
       /* 顶部分类导航栏 */
       .top-categories {
@@ -438,7 +438,8 @@
     {%- endif -%}
 
     {% sections 'header-group' %}
-
+    
+    {%- render 'breadcrumb' -%}
     <main
       id="MainContent"
       class="content-for-layout focus-none"

@@ -258,6 +258,81 @@
     ]
   },
   {
+    "name": "Breadcrumb",
+    "settings": [
+      { "type": "header", "content": "Breadcrumb" },
+      { "type": "header", "content": "--* Breadcrumbs *--" },
+      {
+        "type": "color",
+        "id": "color_breadcrumbs",
+        "label": "Color Breadcrumbs",
+        "default": "#666666"
+      },
+      {
+        "type": "color",
+        "id": "color_breadcrumbs_active",
+        "label": "Color Breadcrumbs Active",
+        "default": "#222222"
+      },
+      {
+        "type": "color",
+        "id": "bg_breadcrumb",
+        "label": "Background Breadcrumbs",
+        "default": "#f4efe9"
+      },
+      {
+        "type": "range",
+        "id": "limit_ranger",
+        "min": 0,
+        "max": 0.9,
+        "step": 0.1,
+        "label": "Opacity Color",
+        "default": 0
+      },
+      {
+        "type": "checkbox",
+        "id": "show_title_breadcumbs",
+        "label": "Show Big Title"
+      },
+      {
+        "type": "select",
+        "id": "align_bread",
+        "label": "Alignment Title Breadcrumbs ",
+        "options": [
+          { "value": "left", "label": "Left" },
+          { "value": "center", "label": "Center" },
+          { "value": "right", "label": "Right" }
+        ],
+        "default": "left"
+      },
+      {
+        "type": "select",
+        "id": "style_breadcrumb",
+        "label": "Style Breadcrumbs",
+        "options": [
+          { "value": "style_1", "label": "Default" },
+          { "value": "style_2", "label": "Style Background" }
+        ],
+        "default": "style_1"
+      },
+      {
+        "type": "select",
+        "id": "layout_bread",
+        "label": "Layout Breadcrumbs",
+        "options": [
+          { "value": "container", "label": "Container" },
+          { "value": "container-fluid", "label": "Container Fluid" }
+        ],
+        "default": "container"
+      },
+      {
+        "type": "image_picker",
+        "id": "img_breadcrumb",
+        "label": "Background Breadcrumbs"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.typography.name",
     "settings": [
       {

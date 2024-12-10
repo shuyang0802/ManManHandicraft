@@ -3678,3 +3678,9 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+.template-404 .breadcrumb {
+  display: none;
+}
+.template-product.product-hide-breadcrumb .page-container > .breadcrumb {
+  display: none;
+}
