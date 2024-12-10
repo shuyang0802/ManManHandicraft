@@ -11,6 +11,35 @@
   "sections": {
     "contact_form_GaUVUD": {
       "type": "contact-form",
+      "blocks": {
+        "contact_inputs_qqG7kr": {
+          "type": "contact_inputs",
+          "settings": {
+            "title": "Address",
+            "text": "Subtitle",
+            "image": "shopify://shop_images/Vector.png"
+          }
+        },
+        "contact_inputs_W93UTc": {
+          "type": "contact_inputs",
+          "settings": {
+            "title": "Title",
+            "text": "Subtitle"
+          }
+        },
+        "contact_inputs_HxqjW3": {
+          "type": "contact_inputs",
+          "settings": {
+            "title": "Title",
+            "text": "Subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "contact_inputs_qqG7kr",
+        "contact_inputs_W93UTc",
+        "contact_inputs_HxqjW3"
+      ],
       "settings": {
         "heading": "<strong>Need Help With Your Order? Contact us!</strong>",
         "subtitle": "Our Customer Experience team operates between Monday to Friday (9am - 6pm). If you're reaching out to us outside of working hours, we appreciate your patience in getting back to you.",
