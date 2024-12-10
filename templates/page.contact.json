@@ -24,14 +24,16 @@
           "type": "contact_inputs",
           "settings": {
             "title": "Title",
-            "text": "Subtitle"
+            "text": "Subtitle",
+            "image": "shopify://shop_images/bxs_phone.png"
           }
         },
         "contact_inputs_HxqjW3": {
           "type": "contact_inputs",
           "settings": {
-            "title": "Title",
-            "text": "Subtitle"
+            "title": "Working Hours",
+            "text": "Subtitle",
+            "image": "shopify://shop_images/bi_clock-fill.png"
           }
         }
       },
