@@ -16,7 +16,7 @@
           "type": "contact_inputs",
           "settings": {
             "title": "Address",
-            "text": "Subtitle",
+            "text": "73 Circular Rd, #03-01, Singapore 049427",
             "image": "shopify://shop_images/Vector.png"
           }
         },
@@ -45,7 +45,7 @@
       "custom_css": [
         "img {width: 30px; height: 30px;}",
         "h5 {font-size: 20px;}",
-        "p{font-size:14px}"
+        "p {font-size: 14px;}"
       ],
       "settings": {
         "heading": "<strong>Need Help With Your Order? Contact us!</strong>",
