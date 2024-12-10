@@ -43,7 +43,8 @@
         "contact_inputs_HxqjW3"
       ],
       "custom_css": [
-        "img{width: 30px; height:30px}"
+        "img {width: 30px; height: 30px;}",
+        "h5 {font-size: 20px;}"
       ],
       "settings": {
         "heading": "<strong>Need Help With Your Order? Contact us!</strong>",
