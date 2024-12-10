@@ -12,15 +12,13 @@
     "contact_form_GaUVUD": {
       "type": "contact-form",
       "settings": {
-        "heading": "<strong>Need Help With Your Order? Contact us!</strong>",
-        "heading_size": "h2",
+        "heading": "Contact form",
+        "heading_size": "h1",
         "color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36
       }
     }
   },
-  "order": [
-    "contact_form_GaUVUD"
-  ]
+  "order": ["contact_form_GaUVUD"]
 }
