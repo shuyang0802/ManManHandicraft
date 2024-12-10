@@ -29,22 +29,15 @@
     <p>{{ section.settings.subtitle }}</p>
     <div class="row contact__row">
       {% for block in section.blocks %}
-        <div class="col-lg-4 col-md-4 col-sm-12 d-flex align-items-center justify-content-center">
-          <div class="row">
-            <div class="col-4">
-              <img
-                src="{{ block.settings.image |  image_url  }}"
-                class="contact-icons"
-                alt="image"
-                width="100%"
-                height="100%"
-              >
-            </div>
-            <div class="col-8 ">
-              <h5>{{ block.settings.title }}</h5>
-              <p>{{ block.settings.text }}</p>
-            </div>
-          </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <img
+            src="{{ block.settings.image |  image_url  }}"
+            alt="image"
+            width="100%"
+            height="100%"
+          >
+          <h5 class="py-3">{{ block.settings.title }}</h5>
+          <p>{{ block.settings.text }}</p>
         </div>
       {% endfor %}
     </div>
