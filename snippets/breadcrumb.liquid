@@ -68,7 +68,7 @@
         data-bgset="{%- render 'bgset', image: bgimage -%}" data-sizes="auto" data-parent-fit="cover"
       {% endunless %}
     >
-      <div class="{{settings.layout_bread}}">
+      <div class="{{settings.layout_bread}} container">
         {% if settings.show_title_breadcumbs %}
           {% if template contains 'collection' and collection.handle %}
             <h3 class="font-family-2 mb-2 h1 br-title">{{ collection.title }}</h3>
