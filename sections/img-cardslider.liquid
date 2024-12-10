@@ -70,6 +70,7 @@
               </div>
             {% endfor %}
           </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </div>
@@ -88,8 +89,13 @@
       modifier: 1,
       slideShadows: false,
     },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
     pagination: {
       el: '.swiper-pagination',
+      clickable: true,
     },
   });
 {% endjavascript %}
