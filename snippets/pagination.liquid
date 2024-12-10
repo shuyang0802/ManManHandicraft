@@ -21,7 +21,7 @@
           <li>
             <a
               href="{{ paginate.previous.url }}{{ anchor }}"
-              class="pagination__item pagination__item--next pagination__item-arrow link motion-reduce"
+              class="pagination__item pagination__item--next pagination__item-arrow motion-reduce"
               aria-label="{{ 'general.pagination.previous' | t }}"
             >
               <span class="svg-wrapper">
@@ -36,7 +36,7 @@
             {%- if part.is_link -%}
               <a
                 href="{{ part.url }}{{ anchor }}"
-                class="pagination__item link"
+                class="pagination__item"
                 aria-label="{{ 'general.pagination.page' | t: number: part.title }}"
               >
                 {{- part.title -}}
@@ -63,7 +63,7 @@
           <li>
             <a
               href="{{ paginate.next.url }}{{ anchor }}"
-              class="pagination__item pagination__item--prev pagination__item-arrow link motion-reduce"
+              class="pagination__item pagination__item--prev pagination__item-arrow motion-reduce"
               aria-label="{{ 'general.pagination.next' | t }}"
             >
               <span class="svg-wrapper">
