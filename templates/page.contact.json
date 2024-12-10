@@ -32,7 +32,7 @@
           "type": "contact_inputs",
           "settings": {
             "title": "Working Hours",
-            "text": "Subtitle",
+            "text": "Monday-Friday: 9:00 - 22:00 Saturday-Sunday: 9:00 - 21:00",
             "image": "shopify://shop_images/bi_clock-fill.png"
           }
         }
