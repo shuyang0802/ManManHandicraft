@@ -438,7 +438,7 @@
     {%- endif -%}
 
     {% sections 'header-group' %}
-    
+
     {%- render 'breadcrumb' -%}
     <main
       id="MainContent"
@@ -510,5 +510,6 @@
     {%- endif -%}
     <script defer="defer" src="{{ 'responsive-carousel.js' | asset_url }}"></script>
     <script src="{{ 'swiper-bundle.min.js' | asset_url }}" async></script>
+    {%- render 'header-js' -%}
   </body>
 </html>

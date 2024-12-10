@@ -61,7 +61,7 @@
       role="navigation"
       aria-label="breadcrumbs"
       {% unless settings.style_breadcrumb == 'style_1' %}
-        data-bgset="{%- include 'bgset', image: bgimage -%}" data-sizes="auto" data-parent-fit="cover"
+        data-bgset="{%- render 'bgset', image: bgimage -%}" data-sizes="auto" data-parent-fit="cover"
       {% endunless %}
     >
       <div class="{{settings.layout_bread}}">
