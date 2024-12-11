@@ -44,77 +44,6 @@
     "grid_banner_WmLMLa": {
       "type": "grid-banner",
       "blocks": {
-        "banner_3d7nrK": {
-          "type": "banner",
-          "settings": {
-            "image": "shopify://shop_images/b5ca3b2bb585006aa1ed75abdb9b1816.jpg",
-            "width": "6",
-            "description": "",
-            "max-width": 290,
-            "button_text": "Scheule Class",
-            "button_icon": "",
-            "button_link": "",
-            "vertical": "bottom",
-            "horizontal": "center",
-            "text_align": "center"
-          }
-        },
-        "banner_e474wb": {
-          "type": "banner",
-          "settings": {
-            "width": "6",
-            "description": "<h3 class=\"mb-2\">Banner title</h3><p>Lorem ipsum dolor sit amet</p>",
-            "max-width": 290,
-            "button_text": "View more",
-            "button_icon": "",
-            "button_link": "",
-            "vertical": "bottom",
-            "horizontal": "center",
-            "text_align": "center"
-          }
-        },
-        "banner_3YjUe9": {
-          "type": "banner",
-          "settings": {
-            "width": "6",
-            "description": "<h3 class=\"mb-2\">Banner title</h3><p>Lorem ipsum dolor sit amet</p>",
-            "max-width": 290,
-            "button_text": "View more",
-            "button_icon": "",
-            "button_link": "",
-            "vertical": "bottom",
-            "horizontal": "center",
-            "text_align": "center"
-          }
-        },
-        "banner_TiUTGR": {
-          "type": "banner",
-          "settings": {
-            "width": "6",
-            "description": "<h3 class=\"mb-2\">Banner title</h3><p>Lorem ipsum dolor sit amet</p>",
-            "max-width": 290,
-            "button_text": "View more",
-            "button_icon": "",
-            "button_link": "",
-            "vertical": "bottom",
-            "horizontal": "center",
-            "text_align": "center"
-          }
-        },
-        "banner_bJVjJ8": {
-          "type": "banner",
-          "settings": {
-            "width": "6",
-            "description": "<h3 class=\"mb-2\">Banner title</h3><p>Lorem ipsum dolor sit amet</p>",
-            "max-width": 290,
-            "button_text": "View more",
-            "button_icon": "",
-            "button_link": "",
-            "vertical": "bottom",
-            "horizontal": "center",
-            "text_align": "center"
-          }
-        },
         "banner_jBpkkF": {
           "type": "banner",
           "settings": {
@@ -159,17 +88,108 @@
             "horizontal": "center",
             "text_align": "center"
           }
+        },
+        "banner_3d7nrK": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/b5ca3b2bb585006aa1ed75abdb9b1816.jpg",
+            "width": "6",
+            "description": "",
+            "max-width": 290,
+            "button_text": "Scheule Class",
+            "button_icon": "",
+            "button_link": "",
+            "vertical": "bottom",
+            "horizontal": "center",
+            "text_align": "center"
+          }
+        },
+        "banner_e474wb": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/7007a62994a043e9ff6cc3193d36f12e.jpg",
+            "width": "6",
+            "description": "<h3 class=\"mb-2\">Banner title</h3><p>Lorem ipsum dolor sit amet</p>",
+            "max-width": 290,
+            "button_text": "View more",
+            "button_icon": "",
+            "button_link": "",
+            "vertical": "bottom",
+            "horizontal": "center",
+            "text_align": "center"
+          }
+        },
+        "banner_PGxfwR": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/1b36504ca80140c3cb96db9c11910c66.jpg",
+            "width": "6",
+            "description": "<h3 class=\"mb-2\">Banner title</h3><p>Lorem ipsum dolor sit amet</p>",
+            "max-width": 290,
+            "button_text": "View more",
+            "button_icon": "",
+            "button_link": "",
+            "vertical": "bottom",
+            "horizontal": "center",
+            "text_align": "center"
+          }
+        },
+        "banner_3YjUe9": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/f45d0be2add4303dd3428c2bb62e2dc2.jpg",
+            "width": "6",
+            "description": "<h3 class=\"mb-2\">Banner title</h3><p>Lorem ipsum dolor sit amet</p>",
+            "max-width": 290,
+            "button_text": "View more",
+            "button_icon": "",
+            "button_link": "",
+            "vertical": "bottom",
+            "horizontal": "center",
+            "text_align": "center"
+          }
+        },
+        "banner_TiUTGR": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/8fb57eda7cc4d623ea6c9d1a9955fe82.jpg",
+            "width": "6",
+            "description": "<h3 class=\"mb-2\">Banner title</h3><p>Lorem ipsum dolor sit amet</p>",
+            "max-width": 290,
+            "button_text": "View more",
+            "button_icon": "",
+            "button_link": "",
+            "vertical": "bottom",
+            "horizontal": "center",
+            "text_align": "center"
+          }
+        },
+        "banner_bJVjJ8": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/68bb25f63593818cc8e441362910f6ad.jpg",
+            "width": "12",
+            "description": "",
+            "max-width": 290,
+            "button_text": "Scheule Class",
+            "button_icon": "",
+            "button_link": "",
+            "vertical": "bottom",
+            "horizontal": "center",
+            "text_align": "center"
+          }
         }
       },
       "block_order": [
-        "banner_3d7nrK",
-        "banner_e474wb",
-        "banner_3YjUe9",
-        "banner_TiUTGR",
-        "banner_bJVjJ8",
         "banner_jBpkkF",
         "banner_ePdRVn",
-        "banner_pGyqpp"
+        "banner_pGyqpp",
+        "banner_3d7nrK",
+        "banner_e474wb",
+        "banner_PGxfwR",
+        "banner_3YjUe9",
+        "banner_TiUTGR",
+        "banner_bJVjJ8"
       ],
       "settings": {
         "animation": "",
