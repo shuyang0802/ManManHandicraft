@@ -68,7 +68,7 @@
             "max-width": 290,
             "button_text": "Scheule Class",
             "button_icon": "",
-            "button_link": "",
+            "button_link": "shopify://collections/crochet-classes",
             "vertical": "bottom",
             "horizontal": "center",
             "text_align": "center"
@@ -83,7 +83,7 @@
             "max-width": 290,
             "button_text": "Scheule Class",
             "button_icon": "",
-            "button_link": "",
+            "button_link": "shopify://collections/crochet-classes",
             "vertical": "bottom",
             "horizontal": "center",
             "text_align": "center"
