@@ -44,6 +44,77 @@
     "grid_banner_WmLMLa": {
       "type": "grid-banner",
       "blocks": {
+        "banner_3d7nrK": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/b5ca3b2bb585006aa1ed75abdb9b1816.jpg",
+            "width": "6",
+            "description": "",
+            "max-width": 290,
+            "button_text": "Scheule Class",
+            "button_icon": "",
+            "button_link": "",
+            "vertical": "bottom",
+            "horizontal": "center",
+            "text_align": "center"
+          }
+        },
+        "banner_e474wb": {
+          "type": "banner",
+          "settings": {
+            "width": "6",
+            "description": "<h3 class=\"mb-2\">Banner title</h3><p>Lorem ipsum dolor sit amet</p>",
+            "max-width": 290,
+            "button_text": "View more",
+            "button_icon": "",
+            "button_link": "",
+            "vertical": "bottom",
+            "horizontal": "center",
+            "text_align": "center"
+          }
+        },
+        "banner_3YjUe9": {
+          "type": "banner",
+          "settings": {
+            "width": "6",
+            "description": "<h3 class=\"mb-2\">Banner title</h3><p>Lorem ipsum dolor sit amet</p>",
+            "max-width": 290,
+            "button_text": "View more",
+            "button_icon": "",
+            "button_link": "",
+            "vertical": "bottom",
+            "horizontal": "center",
+            "text_align": "center"
+          }
+        },
+        "banner_TiUTGR": {
+          "type": "banner",
+          "settings": {
+            "width": "6",
+            "description": "<h3 class=\"mb-2\">Banner title</h3><p>Lorem ipsum dolor sit amet</p>",
+            "max-width": 290,
+            "button_text": "View more",
+            "button_icon": "",
+            "button_link": "",
+            "vertical": "bottom",
+            "horizontal": "center",
+            "text_align": "center"
+          }
+        },
+        "banner_bJVjJ8": {
+          "type": "banner",
+          "settings": {
+            "width": "6",
+            "description": "<h3 class=\"mb-2\">Banner title</h3><p>Lorem ipsum dolor sit amet</p>",
+            "max-width": 290,
+            "button_text": "View more",
+            "button_icon": "",
+            "button_link": "",
+            "vertical": "bottom",
+            "horizontal": "center",
+            "text_align": "center"
+          }
+        },
         "banner_jBpkkF": {
           "type": "banner",
           "settings": {
@@ -91,6 +162,11 @@
         }
       },
       "block_order": [
+        "banner_3d7nrK",
+        "banner_e474wb",
+        "banner_3YjUe9",
+        "banner_TiUTGR",
+        "banner_bJVjJ8",
         "banner_jBpkkF",
         "banner_ePdRVn",
         "banner_pGyqpp"
