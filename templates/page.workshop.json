@@ -79,10 +79,10 @@
       ],
       "settings": {
         "animation": "",
-        "paddingsection": "0px 0px 0px 0px",
+        "paddingsection": "25px 0px 50px 0px",
         "marginsection": "0px 0px 0px 0px",
         "bgsection": "#fefefe",
-        "title": "Grid banner",
+        "title": "",
         "des": "",
         "setwidth": "container",
         "no_gutter": false
