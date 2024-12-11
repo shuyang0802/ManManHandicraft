@@ -44,13 +44,28 @@
     "grid_banner_WmLMLa": {
       "type": "grid-banner",
       "blocks": {
+        "banner_jBpkkF": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify://shop_images/8250b4dfcb80d7c3be89bae07eb3beb2.jpg",
+            "width": "6",
+            "description": "",
+            "max-width": 290,
+            "button_text": "Scheule Class",
+            "button_icon": "",
+            "button_link": "",
+            "vertical": "bottom",
+            "horizontal": "center",
+            "text_align": "center"
+          }
+        },
         "banner_ePdRVn": {
           "type": "banner",
           "settings": {
             "width": "6",
             "description": "<h3 class=\"mb-2\">Banner title</h3><p>Lorem ipsum dolor sit amet</p>",
             "max-width": 290,
-            "button_text": "View more",
+            "button_text": "Scheule Class",
             "button_icon": "",
             "button_link": "",
             "vertical": "bottom",
@@ -74,6 +89,7 @@
         }
       },
       "block_order": [
+        "banner_jBpkkF",
         "banner_ePdRVn",
         "banner_pGyqpp"
       ],
