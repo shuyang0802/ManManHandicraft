@@ -1,9 +1,145 @@
 <!-- grid-banner.liquid -->
+<style>
+  .banner-theme {
+    position: relative;
+    overflow: hidden;
+  }
+  .banner-theme img {
+    width: 100%;
+  }
+  .banner-theme > a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+  }
+  .banner-theme:hover img {
+    -ms-transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+  }
+  .banner-theme figcaption {
+    position: absolute;
+    width: 90%;
+    max-width: 290px;
+    align-items: center;
+  }
+  .banner-theme-top figcaption {
+    top: 50px;
+  }
+  .banner-theme-mid figcaption {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .banner-theme-bottom figcaption {
+    bottom: 50px;
+  }
+  .banner-theme-left figcaption {
+    left: 50px;
+  }
+  @media (max-width: 991px) {
+    .banner-theme-left figcaption {
+      left: 20px;
+    }
+  }
+  .banner-theme-center figcaption {
+    left: 50%;
+    margin-left: -145px;
+  }
+  .banner-theme-right figcaption {
+    right: 50px;
+  }
+  @media (max-width: 991px) {
+    .banner-theme-right figcaption {
+      right: 20px;
+    }
+  }
+  .hover-effect .hover-content {
+    position: relative;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+  }
+  .hover-effect .hover-content img {
+    transition: 1s ease 0s;
+  }
+  .hover-effect .hover-content .hover_collection {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.46);
+    z-index: 5;
+    padding: 25px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  .hover-effect .hover-content .hover_collection:before {
+    position: absolute;
+    content: '';
+    opacity: 0;
+    transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+  }
+  .hover-effect .hover-content .hover_collection:after {
+    position: absolute;
+    content: '';
+    opacity: 0;
+    transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    -webkit-transform: scale(1, 0);
+    transform: scale(1, 0);
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+  }
+  .hover-effect:hover .hover-content {
+    transition: all 0.3s ease 0s;
+  }
+  .hover-effect:hover .hover-content img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  .hover-effect:hover .hover_collection {
+    opacity: 1;
+  }
+  .hover-effect:hover .hover_collection:after,
+  .hover-effect:hover .hover_collection:before {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+</style>
+
 <div class="customstyle{{ section.id }} " data-aos="{{section.settings.animation}}">
-  {%- include 'style-section' -%}
+  {%- render 'style-section' -%}
   <div class="{{ section.settings.setwidth }}">
     <div class="section-block">
-      {%- include 'section-heading' -%}
+      {%- render 'section-heading' -%}
       <div class="row {% if section.settings.no_gutter %}no-gutters{% endif %}">
         {%- for block in section.blocks -%}
           <style>
@@ -15,11 +151,10 @@
               <div class="hover-content">
                 {%- if block.settings.image != blank -%}
                   <img
-                    src="{% include 'srcBlank' %}"
+                    src="{{ block.settings.image |  image_url  }}"
                     class="lazyload transition"
-                    data-src="{{block.settings.image | img_url:'1920x'}}"
-                    width=""
-                    height=""
+                    width="100%"
+                    height="100%"
                   >
                 {%- else -%}
                   {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
