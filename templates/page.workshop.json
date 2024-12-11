@@ -79,7 +79,7 @@
           "settings": {
             "image": "shopify://shop_images/fbc310223f4d5b058b09a23a45c6379c.jpg",
             "width": "6",
-            "description": "<h3 class=\"mb-2\">Banner title</h3><p>Lorem ipsum dolor sit amet</p>",
+            "description": "",
             "max-width": 290,
             "button_text": "Scheule Class",
             "button_icon": "",
