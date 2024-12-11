@@ -56,45 +56,6 @@
       ],
       "settings": {}
     },
-    "tiktok_aVhYNe": {
-      "type": "tiktok",
-      "blocks": {
-        "tiktok_block_tqUkxm": {
-          "type": "tiktok_block",
-          "settings": {
-            "image": "shopify://shop_images/tik-tok.png",
-            "social-link": "https://www.tiktok.com/@manman_handicraft?is_from_webapp=1&sender_device=pc"
-          }
-        },
-        "tiktok_block_EK8DhP": {
-          "type": "tiktok_block",
-          "settings": {
-            "image": "shopify://shop_images/Xiaohongshu.png",
-            "social-link": "https://www.xiaohongshu.com/user/profile/5c4fe84700000000110306b7?xhsshare=CopyLink&appuid=5c6c4468000000001001f9ac&apptime=1733621441&share_id=bc8701f416544723b14f3850af83a41b"
-          }
-        },
-        "tiktok_block_XWKK9N": {
-          "type": "tiktok_block",
-          "settings": {
-            "image": "shopify://shop_images/Instagram_icon_3d393ac4-67fe-4fe0-8551-e559e0c0e732.png",
-            "social-link": "https://www.instagram.com/manman_handcraft?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-          }
-        }
-      },
-      "block_order": [
-        "tiktok_block_tqUkxm",
-        "tiktok_block_EK8DhP",
-        "tiktok_block_XWKK9N"
-      ],
-      "settings": {
-        "custom_liquid": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/@manman_handicraft\" data-unique-id=\"manman_handicraft\" data-embed-type=\"creator\" style=\"max-width: 780px; min-width: 288px;\" > <section> <a target=\"_blank\" href=\"https://www.tiktok.com/@manman_handicraft?refer=creator_embed\">@manman_handicraft</a> </section> </blockquote> <script async src=\"https://www.tiktok.com/embed.js\"></script>",
-        "title": "Follow Our Social Media",
-        "schedule-title-color-0": "#000000",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "logo_slider_zL6hq9": {
       "type": "logo-slider",
       "blocks": {
@@ -396,11 +357,49 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "tiktok_aVhYNe": {
+      "type": "tiktok",
+      "blocks": {
+        "tiktok_block_tqUkxm": {
+          "type": "tiktok_block",
+          "settings": {
+            "image": "shopify://shop_images/tik-tok.png",
+            "social-link": "https://www.tiktok.com/@manman_handicraft?is_from_webapp=1&sender_device=pc"
+          }
+        },
+        "tiktok_block_EK8DhP": {
+          "type": "tiktok_block",
+          "settings": {
+            "image": "shopify://shop_images/Xiaohongshu.png",
+            "social-link": "https://www.xiaohongshu.com/user/profile/5c4fe84700000000110306b7?xhsshare=CopyLink&appuid=5c6c4468000000001001f9ac&apptime=1733621441&share_id=bc8701f416544723b14f3850af83a41b"
+          }
+        },
+        "tiktok_block_XWKK9N": {
+          "type": "tiktok_block",
+          "settings": {
+            "image": "shopify://shop_images/Instagram_icon_3d393ac4-67fe-4fe0-8551-e559e0c0e732.png",
+            "social-link": "https://www.instagram.com/manman_handcraft?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          }
+        }
+      },
+      "block_order": [
+        "tiktok_block_tqUkxm",
+        "tiktok_block_EK8DhP",
+        "tiktok_block_XWKK9N"
+      ],
+      "settings": {
+        "custom_liquid": "<blockquote class=\"tiktok-embed\" cite=\"https://www.tiktok.com/@manman_handicraft\" data-unique-id=\"manman_handicraft\" data-embed-type=\"creator\" style=\"max-width: 780px; min-width: 288px;\" > <section> <a target=\"_blank\" href=\"https://www.tiktok.com/@manman_handicraft?refer=creator_embed\">@manman_handicraft</a> </section> </blockquote> <script async src=\"https://www.tiktok.com/embed.js\"></script>",
+        "title": "Follow Our Social Media",
+        "schedule-title-color-0": "#000000",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "carousel_RwN79j",
-    "tiktok_aVhYNe",
     "logo_slider_zL6hq9",
     "circle_image_xe4MnB",
     "img_cardslider_CRak8R",
@@ -408,6 +407,7 @@
     "product_grid_9qLqcb",
     "product_grid_XtmTiP",
     "product_grid_JCjeYH",
-    "collapsible_content_cmyEcj"
+    "collapsible_content_cmyEcj",
+    "tiktok_aVhYNe"
   ]
 }
