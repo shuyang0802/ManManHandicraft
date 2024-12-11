@@ -15,16 +15,16 @@
         "heading_XhnNjU": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand",
+            "heading": "About Us",
             "heading_size": "h1"
           }
         },
         "caption_ceXhq4": {
           "type": "caption",
           "settings": {
-            "caption": "Add a tagline",
+            "caption": "ManMan handicraft",
             "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
+            "text_size": "large"
           }
         }
       },
