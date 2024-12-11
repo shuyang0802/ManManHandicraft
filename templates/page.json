@@ -108,9 +108,9 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/Image_20241011010256.jpg",
-            "caption": "Caption",
+            "caption": "ManMan Handicraft",
             "heading": "<strong>Our Mission</strong>",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>We aim to bring joy, comfort, and creativity to your everyday life. Whether you’re looking for a thoughtful gift or a one-of-a-kind accessory, we’re here to make your vision a reality.</p>",
             "button_label": "",
             "button_link": ""
           }
