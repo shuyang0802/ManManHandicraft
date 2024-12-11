@@ -173,7 +173,14 @@
                 {%- endif -%}
               </figcaption>
               {%- if block.settings.button_link != blank -%}
-                <a href="{{block.settings.button_link}}"></a>
+                <a href="{{block.settings.button_link}}">
+                  {%- if block.settings.button_text != blank -%}
+                    <button class="btn btn-theme gradient-theme">
+                      <span class="px-2">{{ block.settings.button_text }}</span>
+                      {{ block.settings.button_icon }}
+                    </button>
+                  {%- endif -%}
+                </a>
               {%- endif -%}
             </figure>
           </div>
