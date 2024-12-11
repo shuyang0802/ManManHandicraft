@@ -163,6 +163,18 @@
           "secondary_button_label": "#505655",
           "shadow": "#252525"
         }
+      },
+      "scheme-6d4f4691-b21d-4141-8898-2ac2765dc2ad": {
+        "settings": {
+          "background": "#eb6d9c",
+          "header_background": "#ffffff",
+          "background_gradient": "linear-gradient(46deg, rgba(235, 109, 156, 1) 13%, rgba(238, 201, 182, 1) 86%)",
+          "text": "#fff",
+          "button": "#2c332f",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#505655",
+          "shadow": "#252525"
+        }
       }
     }
   },
