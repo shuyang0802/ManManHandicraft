@@ -62,8 +62,9 @@
         "banner_ePdRVn": {
           "type": "banner",
           "settings": {
+            "image": "shopify://shop_images/d60424831a5711cac13eaf607375730f.jpg",
             "width": "6",
-            "description": "<h3 class=\"mb-2\">Banner title</h3><p>Lorem ipsum dolor sit amet</p>",
+            "description": "",
             "max-width": 290,
             "button_text": "Scheule Class",
             "button_icon": "",
@@ -76,10 +77,11 @@
         "banner_pGyqpp": {
           "type": "banner",
           "settings": {
+            "image": "shopify://shop_images/fbc310223f4d5b058b09a23a45c6379c.jpg",
             "width": "6",
             "description": "<h3 class=\"mb-2\">Banner title</h3><p>Lorem ipsum dolor sit amet</p>",
             "max-width": 290,
-            "button_text": "View more",
+            "button_text": "Scheule Class",
             "button_icon": "",
             "button_link": "",
             "vertical": "bottom",
