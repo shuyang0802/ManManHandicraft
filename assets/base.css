@@ -555,6 +555,15 @@ hr {
   color: currentColor;
   display: block;
 }
+.full-unstyled-link:hover {
+  text-decoration: none;
+  color: #eb6d9c;
+}
+@media (max-width: 767px) {
+  .full-unstyled-link {
+    text-align: center;
+  }
+}
 
 .placeholder {
   background-color: rgba(var(--color-foreground), 0.04);

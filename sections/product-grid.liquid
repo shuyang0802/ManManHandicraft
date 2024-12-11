@@ -37,10 +37,10 @@
 </style>
 
 <div class="customstyle{{ section.id }}" data-aos="{{section.settings.animation}}">
-  {%- include 'style-section' -%}
+  {%- render 'style-section' -%}
   <div class="{{ section.settings.setwidth }}">
     <div class="section-block">
-      {%- include 'section-heading' -%}
+      {%- render 'section-heading' -%}
       {%- assign collection = collections[section.settings.collection] -%}
       {%- assign rows = section.settings.rows -%}
       {%- if collection != blank -%}
@@ -48,7 +48,7 @@
         <div class="row">
           {%- for product in collection.products limit: product_limit -%}
             <div class="mb-5 col-lg-3 col-md-6 col-sm-6 col-xs-6 col-6 {% if forloop.index > 4 %}small--hide{% endif %}">
-              {%- include 'product-card', product: product, collection: collection -%}
+              {%- render 'product-grid-1', product: product, collection: collection -%}
             </div>
           {%- endfor -%}
         </div>
@@ -67,7 +67,7 @@
                 {%- assign index = i -%}
             {%- endcase -%}
             <div class="col-md-3 col-sm-6 col-xs-6 {% if forloop.index > 4 %}small--hide{% endif %}">
-              {%- include 'product-grid-blank' -%}
+              {%- render 'product-grid-blank' -%}
             </div>
           {%- endfor -%}
         </div>

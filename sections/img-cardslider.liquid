@@ -1,53 +1,77 @@
 <style>
-    .cardslider-title {
-      font-size: 2.5vw;
-      font-weight: 900;
-      color: {{ section.settings.title_color }};
-    }
-    .cardslider-subtitle {
-      font-size: 1.5vw;
-      color:{{ section.settings.subtitle_color }}
-    }
-    .cardslider-button {
-      font-size: 1.5vw;
-      border-radius: 10px;
-      border: none;
-      padding: 10px 20px;
-      background-color: {{ section.settings.button_color }};
-      color: {{ section.settings.button_text_color  }};
-      text-decoration: none;
-    }
-    .cardslider-button:hover{
-        color: #fff;
+      .cardslider-title {
+        font-size: 2.5vw;
+        font-weight: 900;
+        color: {{ section.settings.title_color }};
+      }
+      .cardslider-subtitle {
+        font-size: 1.5vw;
+        color:{{ section.settings.subtitle_color }}
+      }
+      .cardslider-button {
+        font-size: 1.5vw;
+        border-radius: 10px;
+        border: none;
+        padding: 10px 20px;
+        background-color: {{ section.settings.button_color }};
+        color: {{ section.settings.button_text_color  }};
         text-decoration: none;
-    }
-    .swiper{
-    width: 100%;
-    }
-    .swiper-wrapper{
-    width: 100%;
-    height: 35em;
-    display: flex;
-    align-items: center;
-    }
-    .cardslider{
-    width: 20em;
-    height: 90%;
-    background-color: #fff;
-    border-radius: 25px;
-    box-shadow: 0 0 2em rgba(0, 0, 0, .2);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 0 2em;
-    }
-    .cardslider img{
-    border-radius: 25px ;
+      }
+      .cardslider-button:hover{
+          color: #fff;
+          text-decoration: none;
+      }
+      .swiper{
+      width: 100%;
+      }
+      .swiper-wrapper{
+      width: 100%;
+      height: 35em;
+      display: flex;
+      align-items: center;
+      }
+      .cardslider{
+      width: 20em;
+      height: 90%;
+      background-color: #fff;
+      border-radius: 25px;
+      box-shadow: 0 0 2em rgba(0, 0, 0, .2);
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin: 0 2em;
+      }
+      .cardslider img{
+      border-radius: 25px ;
 
+      }
+    .swiper-slide:not(.swiper-slide-active){
+      filter: blur(1px);
     }
-  .swiper-slide:not(.swiper-slide-active){
-    filter: blur(1px);
-  }
+  @media (max-width: 767px) {
+    .col-sm-12.col-lg-5 {
+        text-align: center;
+      }
+      .cardslider-title {
+        font-size: 4vw; /* 调整为更大的字体大小 */
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+      }
+      .cardslider-subtitle {
+        font-size: 3vw; /* 调整为更大的字体大小 */
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+      }
+      .cardslider-button {
+        font-size: 3vw; /* 调整为更大的字体大小 */
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px; /* 添加一些间距 */
+      }
+    }
 </style>
 
 <div class="customstyle{{ section.id }}" data-aos="{{section.settings.animation}}">

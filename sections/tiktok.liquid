@@ -23,6 +23,17 @@
   .social-icon h3:hover{
     color: #EB6D9C;
   }
+  @media screen and (max-width: 750px) {
+    .social-icon img {
+      width: 52px; /* 减小图标的宽度 */
+      height: 52px; /* 减小图标的高度 */
+      display: block;
+      margin: 0 auto;
+    }
+    .col-md-4.col-lg-4.col-sm-4 {
+      flex: 0 0 33%; /* 两列布局 */
+    }
+  }
 </style>
 
 <div class="color-{{ section.settings.color_scheme }} gradient">
@@ -35,7 +46,7 @@
       <div class="container my-5">
         <div class="row">
           {% for blocks in section.blocks %}
-            <div class="col-md-4 col-lg-4 col-sm-12 d-flex align-items-center justify-content-center">
+            <div class="col-md-4 col-lg-4 col-sm-4 d-flex align-items-center justify-content-center">
               <a target="_blank" href="{{ blocks.settings.social-link  }}" class="social-icon">
                 <img
                   src="{{ blocks.settings.image | image_url}} "

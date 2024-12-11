@@ -47,6 +47,31 @@
     display: block;
     margin: auto 0;
   }
+  @media (max-width: 768px) {
+    .slider {
+      height: 120px;
+    }
+
+    .slider .slide-track {
+      height: 120px;
+    }
+
+    .slider .slide {
+      height: 120px;
+    }
+
+    .slider .slide i {
+      font-size: 1.5em;
+    }
+
+    .slider h3 {
+      font-size: 1em;
+    }
+
+    .slider p {
+      font-size: 0.9em;
+    }
+  }
 </style>
 
 <div class="slider" style="--slider-background-color: {{ section.settings.slider_style }};">
@@ -74,50 +99,51 @@
 </div>
 
 {% schema %}
-  {
-    "name": "Logo Slider",
-    "settings": [
-      {
-        "type": "color",
-        "id": "slider_style",
-        "label": "Color",
-        "default": "#000"
-      }
-    ],
-    "blocks": [
-      {
-        "type": "Logo",
-        "name": "Slide",
-        "settings": [
-          {
-            "type": "text",
-            "id": "icon",
-            "label": "Icon",
-            "default": "home"
-          }, {
-            "type": "text",
-            "id": "logotitle",
-            "label": "Logo Title",
-            "default": "Logo Slider"
-          }, {
-            "type": "text",
-            "id": "logotext",
-            "label": "Logo Text",
-            "default": "Logo Slider"
-          }
-        ]
-      }
-    ],
-    "presets": [
-      {
-        "name": "Logo Slider",
-        "category": "Logos",
-        "blocks": [
-          {
-            "type": "Logo"
-          }
-        ]
-      }
-    ]
-  }
+{
+  "name": "Logo Slider",
+  "settings": [
+    {
+      "type": "color",
+      "id": "slider_style",
+      "label": "Color",
+      "default": "#000"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "Logo",
+      "name": "Slide",
+      "settings": [
+        {
+          "type": "text",
+          "id": "icon",
+          "label": "Icon",
+          "default": "home"
+        },
+        {
+          "type": "text",
+          "id": "logotitle",
+          "label": "Logo Title",
+          "default": "Logo Slider"
+        },
+        {
+          "type": "text",
+          "id": "logotext",
+          "label": "Logo Text",
+          "default": "Logo Slider"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Logo Slider",
+      "blocks": [
+        {
+          "type": "Logo"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}

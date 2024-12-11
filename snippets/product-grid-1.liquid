@@ -31,8 +31,7 @@
     align-items: center;
     justify-content: center;
     font-size: 18px;
-    transition: background-color 0.3s ease
-    , color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
     z-index: 2;
     /* 确保按钮在图像之上 */
   }
@@ -58,8 +57,17 @@
     color: #222;
   }
   .product-title:hover {
-    color: #EB6D9C !important;
+    color: #eb6d9c !important;
     text-decoration: none;
+  }
+  @media (max-width: 768px) {
+    .product-image img {
+      height: 180px;
+      aspect-ratio: 1:1;/* 设置按钮高度为100% */
+    }
+    .add-to-cart-button {
+      height: 180px;
+    }
   }
 </style>
 
@@ -69,7 +77,10 @@
       <img
         class="card-img-top"
         src="{{ product.featured_image | img_url: 'large' }}"
-        alt="{{ product.title }}">
+        alt="{{ product.title }}"
+        width=""
+        height=""
+      >
     </a>
     <button class="add-to-cart-button" onclick="addToCart('{{ product.variants.first.id }}')">Add To Cart</button>
   </div>
@@ -83,7 +94,7 @@
   </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <script>
   function addToCart(variantId) {
@@ -91,14 +102,15 @@
     fetch('/cart/add.js', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
       },
       body: JSON.stringify({
         id: variantId,
-        quantity: 1
-      })
-    }).then(response => response.json())
-      .then(data => {
+        quantity: 1,
+      }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
         console.log('Product added to cart:', data);
         // 使用 SweetAlert 显示通知
         Swal.fire({
@@ -106,7 +118,7 @@
           title: 'Added to Cart',
           text: 'The product has been added to your cart!',
           showConfirmButton: false,
-          timer: 1500
+          timer: 1500,
         });
 
         // 滚动到顶部
@@ -115,7 +127,7 @@
         // 更新购物车图标
         updateCartIcon();
       })
-      .catch(error => {
+      .catch((error) => {
         console.error('Error adding product to cart:', error);
         // 使用 SweetAlert 显示错误通知
         Swal.fire({
@@ -123,15 +135,15 @@
           title: 'Oops...',
           text: 'Something went wrong! Please try again.',
           showConfirmButton: false,
-          timer: 1500
+          timer: 1500,
         });
       });
   }
 
   function updateCartIcon() {
     fetch('/cart.js')
-      .then(response => response.json())
-      .then(cart => {
+      .then((response) => response.json())
+      .then((cart) => {
         const cartItemCount = cart.item_count;
         console.log('Cart item count:', cartItemCount); // 调试信息
         const cartIcon = document.getElementById('cart-icon-bubble');
@@ -154,7 +166,7 @@
           console.error('Cart icon element not found'); // 调试信息
         }
       })
-      .catch(error => {
+      .catch((error) => {
         console.error('Error fetching cart data:', error); // 调试信息
       });
   }
