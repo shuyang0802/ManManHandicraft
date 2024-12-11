@@ -97,9 +97,9 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/Image_20241011010015.jpg",
-            "caption": "Caption",
+            "caption": "ManMan Handicraft",
             "heading": "<strong>Why Choose Us?</strong>",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>We believe in the power of handmade products to tell a story, evoke emotions, and create lasting memories. Each item is meticulously crafted using high-quality materials, ensuring both durability and beauty.</p>",
             "button_label": "",
             "button_link": ""
           }
