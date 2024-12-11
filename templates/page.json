@@ -85,6 +85,7 @@
         "row_BKQbF9": {
           "type": "row",
           "settings": {
+            "image": "shopify://shop_images/48ecddb2464cb7ae7f0fee8da29023cc.jpg",
             "caption": "ManMan Handicraft",
             "heading": "<strong>Our Story</strong>",
             "text": "<p><strong>ManMan Handicraft </strong>was born out of a passion for crochet and a desire to share its beauty with the world. What started as a personal hobby soon grew into a thriving business, thanks to the support of our wonderful customers and the joy of creating meaningful handmade items.</p>",
@@ -98,17 +99,18 @@
             "caption": "Caption",
             "heading": "Row",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "Button label",
+            "button_label": "",
             "button_link": ""
           }
         },
         "row_XW9T4Q": {
           "type": "row",
           "settings": {
+            "image": "shopify://shop_images/Image_20241011010256.jpg",
             "caption": "Caption",
             "heading": "Row",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "Button label",
+            "button_label": "",
             "button_link": ""
           }
         }
@@ -126,9 +128,9 @@
         "button_style": "secondary",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
-        "image_layout": "alternate-left",
+        "image_layout": "alternate-right",
         "section_color_scheme": "",
-        "row_color_scheme": "",
+        "row_color_scheme": "scheme-6d4f4691-b21d-4141-8898-2ac2765dc2ad",
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
