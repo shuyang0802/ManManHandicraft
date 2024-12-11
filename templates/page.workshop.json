@@ -15,7 +15,7 @@
         "heading_XhnNjU": {
           "type": "heading",
           "settings": {
-            "heading": "About",
+            "heading": "WORKSHOP",
             "heading_size": "h1"
           }
         },
@@ -40,27 +40,9 @@
         "padding_top": 40,
         "padding_bottom": 0
       }
-    },
-    "featured_blog_fQWD9i": {
-      "type": "featured-blog",
-      "settings": {
-        "heading": "Blog posts",
-        "heading_size": "h1",
-        "blog": "crochet-classes",
-        "post_limit": 3,
-        "columns_desktop": 3,
-        "color_scheme": "",
-        "show_image": true,
-        "show_date": true,
-        "show_author": false,
-        "show_view_all": true,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
-    "rich_text_Wtn34Y",
-    "featured_blog_fQWD9i"
+    "rich_text_Wtn34Y"
   ]
 }
