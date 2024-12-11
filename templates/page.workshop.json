@@ -40,9 +40,57 @@
         "padding_top": 40,
         "padding_bottom": 0
       }
+    },
+    "grid_banner_WmLMLa": {
+      "type": "grid-banner",
+      "blocks": {
+        "banner_ePdRVn": {
+          "type": "banner",
+          "settings": {
+            "width": "6",
+            "description": "<h3 class=\"mb-2\">Banner title</h3><p>Lorem ipsum dolor sit amet</p>",
+            "max-width": 290,
+            "button_text": "View more",
+            "button_icon": "",
+            "button_link": "",
+            "vertical": "bottom",
+            "horizontal": "center",
+            "text_align": "center"
+          }
+        },
+        "banner_pGyqpp": {
+          "type": "banner",
+          "settings": {
+            "width": "6",
+            "description": "<h3 class=\"mb-2\">Banner title</h3><p>Lorem ipsum dolor sit amet</p>",
+            "max-width": 290,
+            "button_text": "View more",
+            "button_icon": "",
+            "button_link": "",
+            "vertical": "bottom",
+            "horizontal": "center",
+            "text_align": "center"
+          }
+        }
+      },
+      "block_order": [
+        "banner_ePdRVn",
+        "banner_pGyqpp"
+      ],
+      "settings": {
+        "animation": "",
+        "paddingsection": "0px 0px 0px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "bgsection": "#fefefe",
+        "title": "Grid banner",
+        "des": "",
+        "setwidth": "container",
+        "no_gutter": false
+      }
     }
   },
   "order": [
-    "rich_text_Wtn34Y"
+    "rich_text_Wtn34Y",
+    "grid_banner_WmLMLa"
   ]
 }
