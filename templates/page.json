@@ -96,6 +96,7 @@
         "row_J3CwpJ": {
           "type": "row",
           "settings": {
+            "image": "shopify://shop_images/Image_20241011010015.jpg",
             "caption": "Caption",
             "heading": "Row",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
