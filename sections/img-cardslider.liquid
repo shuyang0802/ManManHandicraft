@@ -102,10 +102,13 @@
 </div>
 {% javascript %}
   const swiper = new Swiper('.mySwiper', {
-    freeMode: true, 
+    freeMode: true,
     effect: 'coverflow',
     centeredSlides: true,
     slidesPerView: 'auto',
+    grabCursor: true,
+    loop: true,
+    spaceBetween: 30,
     coverflowEffect: {
       rotate: 0,
       stretch: 0,
