@@ -1,79 +1,80 @@
 <style>
-      .cardslider-title {
-        font-size: 2.5vw;
-        font-weight: 900;
-        color: {{ section.settings.title_color }};
-      }
-      .cardslider-subtitle {
-        font-size: 1.5vw;
-        color:{{ section.settings.subtitle_color }}
-      }
-      .cardslider-button {
-        font-size: 1.5vw;
-        border-radius: 10px;
-        border: none;
-        padding: 10px 20px;
-        background-color: {{ section.settings.button_color }};
-        color: {{ section.settings.button_text_color  }};
-        text-decoration: none;
-      }
-      .cardslider-button:hover{
-          color: #fff;
-          text-decoration: none;
-      }
-      .swiper{
-      width: 100%;
-      }
-      .swiper-wrapper{
-      width: 100%;
-      height: 35em;
-      display: flex;
-      align-items: center;
-      }
-      .cardslider{
-      width: 20em;
-      height: 90%;
-      background-color: #fff;
-      border-radius: 25px;
-      box-shadow: 0 0 2em rgba(0, 0, 0, .2);
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      margin: 0 2em;
-      }
-      .cardslider img{
-      border-radius: 25px ;
-      }
+  .cardslider-title {
+    font-size: 2.5vw;
+    font-weight: 900;
+    color: {{ section.settings.title_color }};
+  }
+  .cardslider-subtitle {
+    font-size: 1.5vw;
+    color: {{ section.settings.subtitle_color }}
+  }
+  .cardslider-button {
+    font-size: 1.5vw;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 20px;
+    background-color: {{ section.settings.button_color }};
+    color: {{ section.settings.button_text_color }};
+    text-decoration: none;
+  }
+  .cardslider-button:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  .swiper {
+    width: 100%;
+  }
+  .swiper-wrapper {
+    width: 100%;
+    height: 35em;
+    display: flex;
+    align-items: center;
+  }
+  .cardslider {
+    width: 20em;
+    height: 90%;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 2em;
+  }
+  .cardslider img {
+    border-radius: 25px;
+  }
   @media (max-width: 767px) {
     .col-sm-12.col-lg-5 {
-        text-align: center;
-      }
-      .cardslider-title {
-        font-size: 4vw; /* 调整为更大的字体大小 */
-        text-align: center;
-        display: block;
-        margin: 0 auto;
-      }
-      .cardslider-subtitle {
-        font-size: 3vw; /* 调整为更大的字体大小 */
-        text-align: center;
-        display: block;
-        margin: 0 auto;
-      }
-      .cardslider-button {
-        font-size: 3vw; /* 调整为更大的字体大小 */
-        text-align: center;
-        display: block;
-        margin: 0 auto;
-        margin-top: 10px; /* 添加一些间距 */
-      }
-      .swiper-pagination {
-        display: block; /* 确保在小屏幕上也可见 */
-      }
-      div:empty{
-        display: block;
-      }
+      text-align: center;
     }
+    .cardslider-title {
+      font-size: 4vw;
+      /* 调整为更大的字体大小 */
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+    }
+    .cardslider-subtitle {
+      font-size: 3vw;
+      /* 调整为更大的字体大小 */
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+    }
+    .cardslider-button {
+      font-size: 3vw;
+      /* 调整为更大的字体大小 */
+      text-align: center;
+      display: block;
+      margin: 10px auto 0;
+      /* 添加一些间距 */
+    }
+    .swiper-pagination {
+      display: block;
+      /* 确保在小屏幕上也可见 */
+    }
+  }
 </style>
 <div class="customstyle{{ section.id }}" data-aos="{{section.settings.animation}}">
   {%- render 'style-section' -%}
@@ -91,7 +92,11 @@
           <div class="swiper-wrapper">
             {% for block in section.blocks %}
               <div class="cardslider swiper-slide">
-                <img src="{{ block.settings.image | image_url }}" alt="card image" width="100%" height="100%">
+                <img
+                  src="{{ block.settings.image | image_url }}"
+                  alt="card image"
+                  width="100%"
+                  height="100%">
               </div>
             {% endfor %}
           </div>
@@ -112,7 +117,7 @@
       stretch: 0,
       depth: 300,
       modifier: 1,
-      slideShadows: false,
+      slideShadows: false
     },
     simulateTouch: true,
     touchRatio: 1,
@@ -121,227 +126,195 @@
     threshold: 0,
     autoplay: {
       delay: 2500,
-      disableOnInteraction: false,
+      disableOnInteraction: false
     },
     pagination: {
       el: '.swiper-pagination',
-      clickable: true,
-    },
+      clickable: true
+    }
   });
 {% endjavascript %}
 {% schema %}
-{
-  "name": "Image Card Slider",
-  "settings": [
-    {
-      "type": "select",
-      "id": "animation",
-      "options": [
-        {
-          "value": "",
-          "label": "None"
-        },
-        {
-          "value": "fade",
-          "label": "Fade"
-        },
-        {
-          "value": "fade-up",
-          "label": "Fade Up"
-        },
-        {
-          "value": "fade-down",
-          "label": "Fade Down"
-        },
-        {
-          "value": "fade-left",
-          "label": "Fade Left"
-        },
-        {
-          "value": "fade-right",
-          "label": "Fade Right"
-        },
-        {
-          "value": "fade-up-right",
-          "label": "Fade Up Right"
-        },
-        {
-          "value": "fade-up-left",
-          "label": "Fade Up Left"
-        },
-        {
-          "value": "fade-down-right",
-          "label": "Fade Down Right"
-        },
-        {
-          "value": "fade-down-left",
-          "label": "Fade Down Left"
-        },
-        {
-          "value": "flip-up",
-          "label": "Flip Up"
-        },
-        {
-          "value": "flip-down",
-          "label": "Flip Down"
-        },
-        {
-          "value": "flip-left",
-          "label": "Flip Left"
-        },
-        {
-          "value": "flip-right",
-          "label": "Flip Right"
-        },
-        {
-          "value": "slide-up",
-          "label": "Slide Up"
-        },
-        {
-          "value": "slide-down",
-          "label": "Slide Down"
-        },
-        {
-          "value": "slide-left",
-          "label": "Slide Left"
-        },
-        {
-          "value": "slide-right",
-          "label": "Slide Right"
-        },
-        {
-          "value": "zoom-in",
-          "label": "Zoom In"
-        },
-        {
-          "value": "zoom-in-up",
-          "label": "Zoom In Up"
-        },
-        {
-          "value": "zoom-in-down",
-          "label": "Zoom In Down"
-        },
-        {
-          "value": "zoom-in-left",
-          "label": "Zoom In Left"
-        },
-        {
-          "value": "zoom-in-right",
-          "label": "Zoom In Right"
-        },
-        {
-          "value": "zoom-out",
-          "label": "Zoom Out"
-        },
-        {
-          "value": "zoom-out-up",
-          "label": "Zoom Out Up"
-        },
-        {
-          "value": "zoom-out-down",
-          "label": "Zoom Out Down"
-        },
-        {
-          "value": "zoom-out-left",
-          "label": "Zoom Out Feft"
-        },
-        {
-          "value": "zoom-out-right",
-          "label": "Zoom Out Right"
-        }
-      ],
-      "label": "Select Animation"
-    },
-    {
-      "type": "text",
-      "id": "paddingsection",
-      "label": "Padding Section",
-      "default": "0px 0px 0px 0px",
-      "info": "Padding: Top Right Bottom Left"
-    },
-    {
-      "type": "text",
-      "id": "marginsection",
-      "label": "Margin Section",
-      "default": "0px 0px 0px 0px",
-      "info": "Margin: Top Right Bottom Left"
-    },
-    {
-      "type": "color",
-      "id": "bgsection",
-      "label": "Background Section",
-      "default": "#ffffff"
-    },
-    {
-      "type": "text",
-      "id": "heading",
-      "label": "Heading",
-      "default": "Heading"
-    },
-    {
-      "type": "text",
-      "id": "subheading",
-      "label": "Subheading",
-      "default": "Subheading"
-    },
-    {
-      "type": "text",
-      "id": "button",
-      "label": "Button",
-      "default": "Button"
-    },
-    {
-      "type": "url",
-      "id": "button-link",
-      "label": "Button Link"
-    },
-    {
-      "type": "color",
-      "id": "title_color",
-      "label": "Title Color",
-      "default": "#000000"
-    },
-    {
-      "type": "color",
-      "id": "subtitle_color",
-      "label": "Subtitle Color",
-      "default": "#000000"
-    },
-    {
-      "type": "color",
-      "id": "button_color",
-      "label": "Button Color",
-      "default": "#000000"
-    },
-    {
-      "type": "color",
-      "id": "button_text_color",
-      "label": "Button Text Color",
-      "default": "#ffffff"
-    }
-  ],
-  "blocks": [
-    {
-      "type": "img_cardslider",
-      "name": "Image Card Slider",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image"
-        }
-      ]
-    }
-  ],
-  "presets": [
-    {
-      "name": "Image Card Slider",
-      "blocks": [
-        {
-          "type": "img_cardslider"
-        }
-      ]
-    }
-  ]
-}
+  {
+    "name": "Image Card Slider",
+    "settings": [
+      {
+        "type": "select",
+        "id": "animation",
+        "options": [
+          {
+            "value": "",
+            "label": "None"
+          },
+          {
+            "value": "fade",
+            "label": "Fade"
+          },
+          {
+            "value": "fade-up",
+            "label": "Fade Up"
+          },
+          {
+            "value": "fade-down",
+            "label": "Fade Down"
+          }, {
+            "value": "fade-left",
+            "label": "Fade Left"
+          }, {
+            "value": "fade-right",
+            "label": "Fade Right"
+          }, {
+            "value": "fade-up-right",
+            "label": "Fade Up Right"
+          }, {
+            "value": "fade-up-left",
+            "label": "Fade Up Left"
+          }, {
+            "value": "fade-down-right",
+            "label": "Fade Down Right"
+          }, {
+            "value": "fade-down-left",
+            "label": "Fade Down Left"
+          }, {
+            "value": "flip-up",
+            "label": "Flip Up"
+          }, {
+            "value": "flip-down",
+            "label": "Flip Down"
+          }, {
+            "value": "flip-left",
+            "label": "Flip Left"
+          }, {
+            "value": "flip-right",
+            "label": "Flip Right"
+          }, {
+            "value": "slide-up",
+            "label": "Slide Up"
+          }, {
+            "value": "slide-down",
+            "label": "Slide Down"
+          }, {
+            "value": "slide-left",
+            "label": "Slide Left"
+          }, {
+            "value": "slide-right",
+            "label": "Slide Right"
+          }, {
+            "value": "zoom-in",
+            "label": "Zoom In"
+          }, {
+            "value": "zoom-in-up",
+            "label": "Zoom In Up"
+          }, {
+            "value": "zoom-in-down",
+            "label": "Zoom In Down"
+          }, {
+            "value": "zoom-in-left",
+            "label": "Zoom In Left"
+          }, {
+            "value": "zoom-in-right",
+            "label": "Zoom In Right"
+          }, {
+            "value": "zoom-out",
+            "label": "Zoom Out"
+          }, {
+            "value": "zoom-out-up",
+            "label": "Zoom Out Up"
+          }, {
+            "value": "zoom-out-down",
+            "label": "Zoom Out Down"
+          }, {
+            "value": "zoom-out-left",
+            "label": "Zoom Out Feft"
+          }, {
+            "value": "zoom-out-right",
+            "label": "Zoom Out Right"
+          }
+        ],
+        "label": "Select Animation"
+      },
+      {
+        "type": "text",
+        "id": "paddingsection",
+        "label": "Padding Section",
+        "default": "0px 0px 0px 0px",
+        "info": "Padding: Top Right Bottom Left"
+      },
+      {
+        "type": "text",
+        "id": "marginsection",
+        "label": "Margin Section",
+        "default": "0px 0px 0px 0px",
+        "info": "Margin: Top Right Bottom Left"
+      },
+      {
+        "type": "color",
+        "id": "bgsection",
+        "label": "Background Section",
+        "default": "#ffffff"
+      }, {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Heading"
+      }, {
+        "type": "text",
+        "id": "subheading",
+        "label": "Subheading",
+        "default": "Subheading"
+      }, {
+        "type": "text",
+        "id": "button",
+        "label": "Button",
+        "default": "Button"
+      }, {
+        "type": "url",
+        "id": "button-link",
+        "label": "Button Link"
+      }, {
+        "type": "color",
+        "id": "title_color",
+        "label": "Title Color",
+        "default": "#000000"
+      }, {
+        "type": "color",
+        "id": "subtitle_color",
+        "label": "Subtitle Color",
+        "default": "#000000"
+      }, {
+        "type": "color",
+        "id": "button_color",
+        "label": "Button Color",
+        "default": "#000000"
+      }, {
+        "type": "color",
+        "id": "button_text_color",
+        "label": "Button Text Color",
+        "default": "#ffffff"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "img_cardslider",
+        "name": "Image Card Slider",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Image Card Slider",
+        "blocks": [
+          {
+            "type": "img_cardslider"
+          }
+        ]
+      }
+    ]
+  }
 {% endschema %}
