@@ -60,7 +60,7 @@
       "type": "custom-liquid",
       "custom_css": [
         "iframe {display: block; margin: 0 auto; width: 750px;}",
-        "@media (max-width: 767px) {}"
+        "@media (max-width: 767px) {iframe{width:300px; height:300px;}}"
       ],
       "settings": {
         "custom_liquid": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15955.249421215047!2d103.848922!3d1.2866536!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da190246146535%3A0xe43dc85e4ff22e87!2zbWFubWFuIGhhbmRpY3JhZnQg5oWi5oWi5omL5L2c!5e0!3m2!1szh-CN!2ssg!4v1733912075631!5m2!1szh-CN!2ssg\" width=\"100%\" height=\"450\" \nclass=\"container\"\nstyle=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
