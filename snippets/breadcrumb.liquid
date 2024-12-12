@@ -59,10 +59,10 @@
       --bs-gutter-x: 0;
     }
     @media (max-width: 767px) {
-      h3 {
+      .breadcrumb-title {
         text-align: center !important;
       }
-      .container {
+      .breadcrumb-link {
         text-align: center;
       }
     }
@@ -88,7 +88,7 @@
       data-sizes="auto"
       data-parent-fit="cover"
       {% endunless %}>
-      <div class="{{settings.layout_bread}} container">
+      <div class="{{settings.layout_bread}} container breadcrumb-title">
         {% if settings.show_title_breadcumbs %}
           {% if template contains 'collection' and collection.handle %}
             <h3 class="font-family-2 mb-2 h1 br-title">{{ collection.title }}</h3>
@@ -104,7 +104,7 @@
           {% endif %}
         {% endif %}
       </div>
-      <div class="{{settings.layout_bread}} container">
+      <div class="{{settings.layout_bread}} container breadcrumb-link">
         <a href="/" title="Home">Home</a>
         {% if template contains 'page' %}
           <span>/</span>
