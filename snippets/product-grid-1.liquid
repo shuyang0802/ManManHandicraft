@@ -31,7 +31,8 @@
     align-items: center;
     justify-content: center;
     font-size: 18px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease
+    , color 0.3s ease;
     z-index: 2;
     /* 确保按钮在图像之上 */
   }
@@ -55,6 +56,10 @@
   }
   .product-title {
     color: #222;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
   .product-title:hover {
     color: #eb6d9c !important;
@@ -63,7 +68,8 @@
   @media (max-width: 768px) {
     .product-image img {
       height: 180px;
-      aspect-ratio: 1:1;/* 设置按钮高度为100% */
+      aspect-ratio: 1: 1;
+      /* 设置按钮高度为100% */
     }
     .add-to-cart-button {
       height: 180px;
@@ -79,8 +85,7 @@
         src="{{ product.featured_image | img_url: 'large' }}"
         alt="{{ product.title }}"
         width=""
-        height=""
-      >
+        height="">
     </a>
     <button class="add-to-cart-button" onclick="addToCart('{{ product.variants.first.id }}')">Add To Cart</button>
   </div>
