@@ -32,7 +32,5 @@
       }
     }
   },
-  "order": [
-    "header"
-  ]
+  "order": ["header"]
 }

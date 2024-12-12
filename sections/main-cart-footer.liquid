@@ -17,6 +17,18 @@
   }
 {%- endstyle -%}
 
+<style>
+  .cart__checkout-button{
+    padding: 10px 5px;
+    background-color: #eb6d9c;
+    color: #fff;
+  }
+  .cart__checkout-button:hover{
+    color: #fff;
+    background-color: #eec9b6;
+  }
+</style>
+
 <div
   class="gradient color-{{ section.settings.color_scheme }}{% if cart == empty %} is-empty{% endif %}"
   id="main-cart-footer"
