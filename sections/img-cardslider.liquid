@@ -45,9 +45,6 @@
       border-radius: 25px ;
 
       }
-    .swiper-slide:not(.swiper-slide-active){
-      filter: blur(1px);
-    }
   @media (max-width: 767px) {
     .col-sm-12.col-lg-5 {
         text-align: center;
@@ -103,7 +100,6 @@
 {% javascript %}
   const swiper = new Swiper('.mySwiper', {
     effect: 'coverflow',
-    grabCursor: true,
     centeredSlides: true,
     slidesPerView: 'auto',
     coverflowEffect: {
