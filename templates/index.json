@@ -396,10 +396,6 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
-    },
-    "cardslider_rtNe9X": {
-      "type": "cardslider",
-      "settings": {}
     }
   },
   "order": [
@@ -412,7 +408,6 @@
     "product_grid_XtmTiP",
     "product_grid_JCjeYH",
     "collapsible_content_cmyEcj",
-    "tiktok_aVhYNe",
-    "cardslider_rtNe9X"
+    "tiktok_aVhYNe"
   ]
 }
