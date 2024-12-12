@@ -105,12 +105,10 @@
 </div>
 {% javascript %}
   var swiper = new Swiper('.mySwiper', {
-    direction: 'horizontal',
-    freeMode: true,
     effect: 'coverflow',
+    grabCursor: true,
     centeredSlides: true,
     slidesPerView: 'auto',
-    grabCursor: true,
     coverflowEffect: {
       rotate: 0,
       stretch: 0,
@@ -128,7 +126,6 @@
     },
   });
 {% endjavascript %}
-
 {% schema %}
 {
   "name": "Image Card Slider",
