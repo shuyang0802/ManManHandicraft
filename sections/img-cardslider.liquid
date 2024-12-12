@@ -97,8 +97,6 @@
               </div>
             {% endfor %}
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
           <div class="swiper-pagination"></div>
         </div>
       </div>
@@ -106,7 +104,7 @@
   </div>
 </div>
 {% javascript %}
-  const swiper = new Swiper('.mySwiper', {
+  var swiper = new Swiper('.mySwiper', {
     direction: 'horizontal',
     freeMode: true,
     effect: 'coverflow',
@@ -127,10 +125,6 @@
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
     },
   });
 {% endjavascript %}
